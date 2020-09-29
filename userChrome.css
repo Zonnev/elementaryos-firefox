@@ -4,7 +4,7 @@
 
 /*This style will blend Firefox 65+ in elementary OS.  Currently tested on Linux on Nightly*/
 
-/* This userChrome is for button layout Minimize right */
+/* This userChrome is for button layout Elementary */
 
 /* fix for showing black background in corners */
 #main-window {
@@ -173,12 +173,14 @@ hbox > .menupopup-arrowscrollbox, box > .menupopup-arrowscrollbox {
   pointer-events: none;
 }
 .titlebar-buttonbox {
-  flex-direction: row !important;
-  top: 12px !important; 
+  flex-direction: row-reverse !important;
+  margin-left: 3px !important;
+  top: 12px !important;
   position: fixed !important;
   display: flex !important;
-  width: calc(100vw - 6px) !important;
+  width: calc(100vw - 9px) !important;
   height: 25px !important;
+  justify-content: space-between !important;
 }
 :root[sizemode="fullscreen"] .titlebar-buttonbox {
   display: none !important; /* fullscreen no window control buttons */
@@ -194,17 +196,6 @@ hbox > .menupopup-arrowscrollbox, box > .menupopup-arrowscrollbox {
 .titlebar-restore {
   pointer-events: auto !important; /* clickable */
 }
-/* brings max and min button to the right */
-.titlebar-restore,
-.titlebar-max { 
-  margin-left: 3px !important;
-}
-.titlebar-min { 
-  margin-left: calc(100vw - 68px) !important;
-}
-.titlebar-close {
-  margin-left: calc(10px - 100vw) !important;
-}
 
 /* navbar */
 #navigator-toolbox {
@@ -217,7 +208,7 @@ hbox > .menupopup-arrowscrollbox, box > .menupopup-arrowscrollbox {
   -moz-box-ordinal-group: 0;
   -moz-appearance: -moz-window-titlebar !important; /* makes color appear */
   height: 46px !important;
-  padding: 0px 69px 0px 42px !important;
+  padding: 0px 42px 0px 42px !important;
 }
 /* fullscreen fixes for the nav bar */
 :root[sizemode="fullscreen"] #nav-bar {
@@ -283,7 +274,6 @@ toolbar .toolbarbutton-1:hover > .toolbarbutton-icon {
 toolbar .toolbarbutton-1:active > .toolbarbutton-icon {
   background: rgba(51,51,51, 0.15) !important;
 }
-
 /* keep default icons small while below icons are bigger */
 #back-button > .toolbarbutton-icon,
 #forward-button .toolbarbutton-icon,
