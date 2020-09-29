@@ -152,6 +152,9 @@ hbox > .menupopup-arrowscrollbox, box > .menupopup-arrowscrollbox {
 #downloads-button:-moz-window-inactive  {
   opacity: 0.7 !important; 
 }
+:root:not([customizing]) .toolbarbutton-1[disabled="true"]:-moz-window-inactive {
+  opacity: 0.9 !important;
+}
 
 /* fullscreen fixes */
 #fullscr-toggler {
@@ -262,6 +265,9 @@ hbox > .menupopup-arrowscrollbox, box > .menupopup-arrowscrollbox {
 }
 
 /* toolbar */
+:root:not([customizing]) .toolbarbutton-1[disabled="true"]{
+  opacity: 0.6 !important;
+}
 toolbar .toolbarbutton-1 > .toolbarbutton-icon {
   width: 28px !important;
   height: 28px !important;
