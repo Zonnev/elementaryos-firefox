@@ -364,11 +364,6 @@ toolbar .toolbarbutton-1:hover > .toolbarbutton-badge-stack {
     margin-top: -1px !important;
 }
 
-/* tabs width */
-.tabbrowser-tab[fadein]:not([pinned]) {
-  max-width: 228px !important;
-}
-
 .private-browsing-indicator {
   display: none !important;
 }
