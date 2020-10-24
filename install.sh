@@ -75,7 +75,7 @@ function saveProfile() {
     mkdir -p "${PROFILE_CHROME_DIR}"
     echo "done"
     echo -n "     - Create file 'chrome/userChrome.css' ... "
-    curl -s -o -O "${PROFILE_USER_CHROME_CSS_FILE,PROFILE_USER_CONTENT_CSS_FILE}" "${USER_CHROME_CSS_URL,USER_CONTENT_CSS_URL}"
+    curl -s -oo "${PROFILE_USER_CHROME_CSS_FILE,PROFILE_USER_CONTENT_CSS_FILE}" "${USER_CHROME_CSS_URL,USER_CONTENT_CSS_URL}"
     echo "done"
 }
 
