@@ -75,7 +75,7 @@ function saveProfile() {
     mkdir -p "${PROFILE_CHROME_DIR}"
     echo "done"
     echo -n "     - Create file 'chrome/userChrome.css' ... "
-    curl -s -o "${PROFILE_USER_CHROME_CSS_FILE,PROFILE_USER_CONTENT_CSS_FILE}" "${USER_CHROME_CSS_URL,USER_CONTENT_CSS_URL}"
+    curl -s -o "${PROFILE_USER_CHROME_CSS_FILE}" "${USER_CHROME_CSS_URL}"
     echo "done"
 }
 
@@ -86,8 +86,7 @@ selectLayout "$1"
 
 FIREFOX_DIR="${HOME}/.mozilla/firefox"
 FIREFOX_DIR_FLATPAK="${HOME}/.var/app/org.mozilla.firefox/.mozilla/firefox"
-USER_CHROME_CSS_URL="https://raw.githubusercontent.com/Zonnev/elementaryos-firefox-theme/master/userChrome.css"
-USER_CONTENT_CSS_URL="https://raw.githubusercontent.com/Zonnev/elementaryos-firefox-theme/master/userContent.css"
+USER_CHROME_CSS_URL="https://raw.githubusercontent.com/Zonnev/elementaryos-firefox-theme/master/userChrome.css https://raw.githubusercontent.com/Zonnev/elementaryos-firefox-theme/master/userContent.css"
 
 echo -n "  1. Check Firefox installation ... "
 if [ ! -d "${FIREFOX_DIR}" ]; then
@@ -100,7 +99,7 @@ if [ ! -d "${FIREFOX_DIR}" ]; then
 fi
 PROFILES_FILE="${FIREFOX_DIR}/profiles.ini"
 if [ ! -f "${PROFILES_FILE}" ]; then
-	>&2 echo "failed, lease check Firefox installation, unable to find profile.ini at ${FIREFOX_DIR}"
+	>&2 echo "failed, please check Firefox installation, unable to find profile.ini at ${FIREFOX_DIR}"
 	exit 1
 fi
 echo " done"
