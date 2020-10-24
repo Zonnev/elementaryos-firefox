@@ -100,7 +100,7 @@ if [ ! -d "${FIREFOX_DIR}" ]; then
 fi
 PROFILES_FILE="${FIREFOX_DIR}/profiles.ini"
 if [ ! -f "${PROFILES_FILE}" ]; then
-	>&2 echo "failed, lease check Firefox installation, unable to find profile.ini at ${FIREFOX_DIR}"
+	>&2 echo "failed, please check Firefox installation, unable to find profile.ini at ${FIREFOX_DIR}"
 	exit 1
 fi
 echo " done"
