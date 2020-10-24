@@ -24,37 +24,37 @@ function selectLayout() {
 	case $USER_CHROME_LAYOUT in
 		2 )
 		    echo "Calling the install script for the 'Close Only Left' layout"
-			curl -s -o- https://raw.githubusercontent.com/Zonnev/elementaryos-firefox-theme/master/Close%20Only%20Left/install.sh | bash
+			curl -s -o- https://raw.githubusercontent.com/Zonnev/elementaryos5-firefox-theme/master/Close%20Only%20Left/install.sh | bash
 			exit 0
 			;;
 		3 )
 		    echo "Calling the install script for the 'Close Only Right' layout"
-			curl -s -o- https://raw.githubusercontent.com/Zonnev/elementaryos-firefox-theme/master/Close%20Only%20Right/install.sh | bash
+			curl -s -o- https://raw.githubusercontent.com/Zonnev/elementaryos5-firefox-theme/master/Close%20Only%20Right/install.sh | bash
 			exit 0
 			;;
 		4 )
 		    echo "Calling the install script for the 'Minimize Left' layout"
-			curl -s -o- https://raw.githubusercontent.com/Zonnev/elementaryos-firefox-theme/master/Minimize%20Left/install.sh | bash
+			curl -s -o- https://raw.githubusercontent.com/Zonnev/elementaryos5-firefox-theme/master/Minimize%20Left/install.sh | bash
 			exit 0
 			;;
 		5 )
 		    echo "Calling the install script for the 'Minimize Right' layout"
-			curl -s -o- https://raw.githubusercontent.com/Zonnev/elementaryos-firefox-theme/master/Minimize%20Right/install.sh | bash
+			curl -s -o- https://raw.githubusercontent.com/Zonnev/elementaryos5-firefox-theme/master/Minimize%20Right/install.sh | bash
 			exit 0
 			;;
 		6 )
 		    echo "Calling the install script for the 'OSX' layout"
-			curl -s -o- https://raw.githubusercontent.com/Zonnev/elementaryos-firefox-theme/master/OSX/install.sh | bash
+			curl -s -o- https://raw.githubusercontent.com/Zonnev/elementaryos5-firefox-theme/master/OSX/install.sh | bash
 			exit 0
 			;;
 		7 )
 		    echo "Calling the install script for the 'Ubuntu' layout"
-			curl -s -o- https://raw.githubusercontent.com/Zonnev/elementaryos-firefox-theme/master/Ubuntu/install.sh | bash
+			curl -s -o- https://raw.githubusercontent.com/Zonnev/elementaryos5-firefox-theme/master/Ubuntu/install.sh | bash
 			exit 0
 			;;
 		8 )
 		    echo "Calling the install script for the 'Windows' layout"
-			curl -s -o- https://raw.githubusercontent.com/Zonnev/elementaryos-firefox-theme/master/Windows/install.sh | bash
+			curl -s -o- https://raw.githubusercontent.com/Zonnev/elementaryos5-firefox-theme/master/Windows/install.sh | bash
 			exit 0
 			;;
 		* )
@@ -69,23 +69,25 @@ function saveProfile() {
 	PROFILE_PATH="${2}"
 	PROFILE_CHROME_DIR="${FIREFOX_DIR}/${PROFILE_PATH}/chrome"
     PROFILE_USER_CHROME_CSS_FILE="${PROFILE_CHROME_DIR}/userChrome.css"
+    PROFILE_USER_CONTENT_CSS_FILE="${PROFILE_CHROME_DIR}/userContent.css"
     echo "  $((${ITEM}+3)). Install theme at profile path ${FIREFOX_DIR}/${PROFILE_PATH}:"
     echo -n "     - Ensure directory 'chrome' ... "
     mkdir -p "${PROFILE_CHROME_DIR}"
     echo "done"
     echo -n "     - Create file 'chrome/userChrome.css' ... "
-    curl -s -o "${PROFILE_USER_CHROME_CSS_FILE}" "${USER_CHROME_CSS_URL}"
+    curl -s -o "${PROFILE_USER_CHROME_CSS_FILE}" "${USER_CHROME_CSS_URL}" -s -o "${PROFILE_USER_CONTENT_CSS_FILE}" "${USER_CONTENT_CSS_URL}"
     echo "done"
 }
 
-echo "Install ElementaryOS Firefox Theme (https://github.com/Zonnev/elementaryos-firefox-theme)"
+echo "Install ElementaryOS Firefox Theme (https://github.com/Zonnev/elementaryos5-firefox-theme)"
 echo ""
 
 selectLayout "$1"
 
 FIREFOX_DIR="${HOME}/.mozilla/firefox"
 FIREFOX_DIR_FLATPAK="${HOME}/.var/app/org.mozilla.firefox/.mozilla/firefox"
-USER_CHROME_CSS_URL="https://raw.githubusercontent.com/Zonnev/elementaryos-firefox-theme/master/userChrome.css"
+USER_CHROME_CSS_URL="https://raw.githubusercontent.com/Zonnev/elementaryos5-firefox-theme/master/userChrome.css"
+USER_CONTENT_CSS_URL="https://raw.githubusercontent.com/Zonnev/elementaryos5-firefox-theme/master/userContent.css"
 
 echo -n "  1. Check Firefox installation ... "
 if [ ! -d "${FIREFOX_DIR}" ]; then
