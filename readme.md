@@ -32,3 +32,8 @@ Just copy the line to your terminal and press enter. Then it lets you choose whi
 
 1. Disable Title bar in the customization panel in Firefox. 
 2. In the customization panel in Firefox you can move the new tab button to the left if you wish and use the dark mode option as well, in combination with [Tweaks](https://github.com/elementary-tweaks/elementary-tweaks).
+
+## Troubleshooting
+
+No rounded corners when you enable dark theme in Firefox?
+Make sure the normal theme is enabled in Firefox and use elementary Tweaks to enable dark mode. 
