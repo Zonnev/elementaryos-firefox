@@ -16,7 +16,7 @@ function saveProfile() {
     echo "done"
 }
 
-echo "Install ElementaryOS Firefox Theme (https://github.com/Zonnev/elementaryos5-firefox-theme)"
+echo "Install ElementaryOS Firefox Theme (https://github.com/Zonnev/elementaryos-firefox-theme)"
 echo ""
 echo "Installing with the 'Windows' layout"
 

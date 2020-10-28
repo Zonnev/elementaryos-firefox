@@ -112,10 +112,6 @@ hbox > .menupopup-arrowscrollbox, box > .menupopup-arrowscrollbox {
   border-right: 1px solid #b6b6b6 !important;
   border-bottom: 1px solid #b6b6b6 !important;
 }
-.tab-label[selected="true"]:-moz-window-inactive:not(:-moz-lwtheme-brighttext),
-.tab-label:-moz-window-inactive:not(:-moz-lwtheme-brighttext) {
-  color: #6C6B6B !important;
-}
 #PanelUI-menu-button:-moz-window-inactive,
 #back-button .toolbarbutton-icon:-moz-window-inactive,
 #forward-button .toolbarbutton-icon:-moz-window-inactive,
@@ -203,7 +199,7 @@ hbox > .menupopup-arrowscrollbox, box > .menupopup-arrowscrollbox {
   -moz-box-ordinal-group: 0;
   -moz-appearance: -moz-window-titlebar !important; /* makes color appear */
   height: 46px !important;
-  padding: 0px 42px 0px 42px !important;
+  padding: 0px 69px 0px 42px !important;
 }
 /* fullscreen fixes for the nav bar */
 :root[sizemode="fullscreen"] #nav-bar {
@@ -269,6 +265,7 @@ toolbar .toolbarbutton-1:hover > .toolbarbutton-icon {
 toolbar .toolbarbutton-1:active > .toolbarbutton-icon {
   background: rgba(51,51,51, 0.15) !important;
 }
+
 /* keep default icons small while below icons are bigger */
 #back-button > .toolbarbutton-icon,
 #forward-button .toolbarbutton-icon,
@@ -572,6 +569,13 @@ toolbar .toolbarbutton-1:hover > .toolbarbutton-badge-stack {
 #TabsToolbar .tab-close-button:-moz-window-inactive {
      opacity: 0.7 !important;
 }
+.tab-label[selected="true"]:-moz-window-inactive {
+  color: #FFF !important;
+}
+.tab-label:-moz-window-inactive{
+	color: #fff !important;
+}
+
 
 /* elements DARK MODE */
 #search-container {
@@ -679,6 +683,20 @@ menubar > menu[open="true"] {
 
 /* DARK MODE standalone */
 
+/*** lets make ROUNDED CORNERS for standalone DARK MODE ***/
+@media (-moz-gtk-csd-available) {
+@media (-moz-gtk-csd-transparent-background) {
+    :root[tabsintitlebar][sizemode="normal"]:-moz-lwtheme-brighttext {
+    background-color: transparent !important;
+    appearance: none !important;
+}
+:root[tabsintitlebar][sizemode="normal"]:not([inFullscreen]) #TabsToolbar:-moz-lwtheme-brighttext,
+:root[tabsintitlebar][sizemode="maximized"] #TabsToolbar:-moz-lwtheme-brighttext,
+:root[tabsintitlebar] #toolbar-menubar):-moz-lwtheme-brighttext {
+    appearance: none !important;
+}
+}}
+
 #back-button:active > .toolbarbutton-icon:-moz-lwtheme-brighttext,
 #forward-button:active .toolbarbutton-icon:-moz-lwtheme-brighttext,
 #reload-button:active .toolbarbutton-icon:-moz-lwtheme-brighttext,
@@ -699,8 +717,13 @@ menubar > menu[open="true"] {
 }
 #nav-bar:-moz-lwtheme-brighttext {
     -moz-appearance: none !important;
+    border-radius: 3.5px 3.5px 0 0 !important;
+    border-top: 1px solid #4A4A4A !important;
     border-bottom: 1px solid #3B3B3B !important;
 	background: linear-gradient(#3C3C3C, #363636) !important;
+}
+#navigator-toolbox:-moz-lwtheme-brighttext {
+    border: none !important;
 }
 :root[sizemode="fullscreen"] #nav-bar:-moz-lwtheme-brighttext {
 	-moz-appearance: none !important;
@@ -751,6 +774,9 @@ menubar > menu[open="true"]:-moz-lwtheme-brighttext {
 }
 .tab-label[selected="true"]:-moz-lwtheme-brighttext {
   color: #FFF !important;
+}
+.tab-label]:-moz-lwtheme-brighttext {
+	color: #fff !important;
 }
 
 /* buttons in DARK MODE standalone */
