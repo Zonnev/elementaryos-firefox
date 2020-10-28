@@ -851,6 +851,7 @@ menubar > menu[open="true"]:-moz-lwtheme-brighttext {
 /* private browsing */
 #main-window[privatebrowsingmode="temporary"] #nav-bar {
   -moz-appearance: none !important;
+  border-radius: 3.5px 3.5px 0 0 !important;
   border-top: 0px !important;
   border-bottom: 0px !important;
   background: linear-gradient(to right, #5E4BC5, #a24c8d) !important;
