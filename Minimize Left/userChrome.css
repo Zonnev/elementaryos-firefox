@@ -662,6 +662,10 @@ toolbar .toolbarbutton-1:hover > .toolbarbutton-badge-stack {
 .panel-arrow {
   margin-top: 4px !important;
 }
+.webextension-browser-action {
+  padding-left: 4px !important;
+  padding-right: 4px !important;
+}
 
 /* DARK MODE */
 @media (prefers-color-scheme: dark) {
