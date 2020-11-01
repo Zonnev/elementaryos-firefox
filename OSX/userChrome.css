@@ -7,14 +7,8 @@
 /* This userChrome is for button layout OSX */
 
 /* menu popups right mouse click */
-menupopup:not(#BMB_bookmarksPopup) {
-    appearance: none !important;
-    color: #000 !important;
-    background: #F5F5F5 !important;
-    margin-left: -5px !important;
-    margin-right: -5px !important;
-}
-.menupopup-arrowscrollbox {
+.menupopup-arrowscrollbox:not([part="arrowscrollbox"]),
+.menupopup-arrowscrollbox[exportparts="scrollbox: arrowscrollbox-scrollbox"] {
     margin-bottom: 10px !important;
     margin-left: 5px !important;
     margin-right: 5px !important;
@@ -22,12 +16,6 @@ menupopup:not(#BMB_bookmarksPopup) {
     background: #F5F5F5 !important;
     border: 1px solid #B6B6B6 !important;
     box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.4) !important;
-}
-hbox > .menupopup-arrowscrollbox, box > .menupopup-arrowscrollbox {
-    margin: 0px !important;
-    box-shadow: none !important;
-    background-color: transparent !important;
-    border: none !important;
 }
 menuseparator,
 toolbarseparator {
@@ -38,54 +26,45 @@ menuitem[disabled="true"],
 menu[disabled="true"] {
     color: gray !important;
 }
-menuitem:hover:not(#customization-uidensity-menuitem-compact):not(#customization-uidensity-menuitem-normal):not(#customization-uidensity-menuitem-touch),
+menuitem:hover:not(#customization-uidensity-menuitem-compact):not(#customization-uidensity-menuitem-normal):not(#customization-uidensity-menuitem-touch):not(#BMB_viewBookmarksSidebar):not(#BMB_bookmarksShowAllTop):not(#BMB_bookmarksShowAll):not(.menuitem-iconic.bookmark-item.menuitem-with-favicon.subviewbutton):not(#BMB_viewBookmarksToolbar):not(.openintabs-menuitem.subviewbutton.panel-subview-footer),
 menu-text:hover:not(.menubar-text) {
     appearance: none !important;
     padding: 3px 6px 3px 6px !important;
-    color: #000!important;
+    color: #000 !important;
     background: #E9E9E9 !important;
 }
 #goPopup,
 #bookmarksMenuPopup {
     appearance: none !important;
-    margin-bottom: 10px !important;
-    margin-left: 5px !important;
-    margin-right: 5px !important;
-    border-radius: 4px !important;
-    color: #000 !important;
-    background: #F5F5F5 !important;
-    border: 1px solid #B6B6B6 !important;
-    box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.4) !important;
+    margin-left: -5px !important;
+    margin-right: -5px !important;
+    border-radius: 0px !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
 }
-menupopup:not(#goPopup):not(#bookmarksMenuPopup):not(#BMB_bookmarksPopup):not([placespopup="true"]) {
+menupopup:not(#goPopup):not(#bookmarksMenuPopup):not(#BMB_bookmarksPopup) {
+    appearance: none !important;
     background-color: transparent !important;
+    margin-left: -5px !important;
+    margin-right: -5px !important;
+    border: none !important;
 }
 
 /* menu popups DARK MODE */
-menupopup:not(#BMB_bookmarksPopup):-moz-lwtheme-brighttext {
-    appearance: none !important;
-    color: #fff !important;
-    background: #4A4A4F !important;
-    margin-left: -5px !important;
-    margin-right: -5px !important;
-}
-.menupopup-arrowscrollbox:-moz-lwtheme-brighttext {
+.menupopup-arrowscrollbox:not([part="arrowscrollbox"]):-moz-lwtheme-brighttext,
+.menupopup-arrowscrollbox[exportparts="scrollbox: arrowscrollbox-scrollbox"]:-moz-lwtheme-brighttext  {
     margin-bottom: 10px !important;
     margin-left: 5px !important;
     margin-right: 5px !important;
-    background: #4A4A4F !important;
     border-radius: 4px !important;
+    background: #4A4A4F !important;
+    color: #fff !important;
     border: 1px solid #272727 !important;
     box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.4) !important;
 }
-hbox > .menupopup-arrowscrollbox:-moz-lwtheme-brighttext, box > .menupopup-arrowscrollbox:-moz-lwtheme-brighttext {
-    margin: 0px !important;
-    box-shadow: none !important;
-    background-color: transparent !important;
-    border: none !important;
-}
 menuseparator:-moz-lwtheme-brighttext,
-toolbarseparator:-moz-lwtheme-brighttext {
+toolbarseparator:-moz-lwtheme-brighttext  {
     appearance: none !important;
     border-top: 1px solid #5C5C61 !important;
 }
@@ -93,7 +72,7 @@ menuitem[disabled="true"]:-moz-lwtheme-brighttext,
 menu[disabled="true"]:-moz-lwtheme-brighttext {
     color: #96968F !important;
 }
-menuitem:hover:not(#customization-uidensity-menuitem-compact):not(#customization-uidensity-menuitem-normal):not(#customization-uidensity-menuitem-touch):-moz-lwtheme-brighttext,
+menuitem:hover:not(#customization-uidensity-menuitem-compact):not(#customization-uidensity-menuitem-normal):not(#customization-uidensity-menuitem-touch):not(#BMB_viewBookmarksSidebar):not(#BMB_bookmarksShowAllTop):not(#BMB_bookmarksShowAll):not(.menuitem-iconic.bookmark-item.menuitem-with-favicon.subviewbutton):not(#BMB_viewBookmarksToolbar):not(.openintabs-menuitem.subviewbutton.panel-subview-footer):-moz-lwtheme-brighttext,
 menu-text:hover:not(.menubar-text):-moz-lwtheme-brighttext {
     appearance: none !important;
     padding: 3px 6px 3px 6px !important;
@@ -103,42 +82,33 @@ menu-text:hover:not(.menubar-text):-moz-lwtheme-brighttext {
 #goPopup:-moz-lwtheme-brighttext,
 #bookmarksMenuPopup:-moz-lwtheme-brighttext {
     appearance: none !important;
-    margin-bottom: 10px !important;
-    margin-left: 5px !important;
-    margin-right: 5px !important;
-    border-radius: 4px !important;
-    color: #fff !important;
-    background: #4A4A4F !important;
-    border: 1px solid #272727 !important;
-    box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.4) !important;
+    margin-left: -5px !important;
+    margin-right: -5px !important;
+    border-radius: 0px !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
 }
-menupopup:not(#goPopup):not(#bookmarksMenuPopup):not(#BMB_bookmarksPopup):not([placespopup="true"]):-moz-lwtheme-brighttext {
+menupopup:not(#goPopup):not(#bookmarksMenuPopup):not(#BMB_bookmarksPopup):-moz-lwtheme-brighttext {
+    appearance: none !important;
     background-color: transparent !important;
+    margin-left: -5px !important;
+    margin-right: -5px !important;
+    border: none !important;
 }
 
 /* menu popups DARK MODE in elementary Tweaks */
 @media (prefers-color-scheme: dark) {
-menupopup:not(#BMB_bookmarksPopup) {
-    appearance: none !important;
-    color: #fff !important;
-    background: #4A4A4F !important;
-    margin-left: -5px !important;
-    margin-right: -5px !important;
-}
-.menupopup-arrowscrollbox {
+.menupopup-arrowscrollbox:not([part="arrowscrollbox"]),
+.menupopup-arrowscrollbox[exportparts="scrollbox: arrowscrollbox-scrollbox"] {
     margin-bottom: 10px !important;
     margin-left: 5px !important;
     margin-right: 5px !important;
-    background: #4A4A4F !important;
     border-radius: 4px !important;
+    background: #4A4A4F !important;
+    color: #fff !important;
     border: 1px solid #272727 !important;
     box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.4) !important;
-}
-hbox > .menupopup-arrowscrollbox, box > .menupopup-arrowscrollbox {
-    margin: 0px !important;
-    box-shadow: none !important;
-    background-color: transparent !important;
-    border: none !important;
 }
 menuseparator,
 toolbarseparator {
@@ -149,7 +119,7 @@ menuitem[disabled="true"],
 menu[disabled="true"] {
     color: #96968F !important;
 }
-menuitem:hover:not(#customization-uidensity-menuitem-compact):not(#customization-uidensity-menuitem-normal):not(#customization-uidensity-menuitem-touch),
+menuitem:hover:not(#customization-uidensity-menuitem-compact):not(#customization-uidensity-menuitem-normal):not(#customization-uidensity-menuitem-touch):not(#BMB_viewBookmarksSidebar):not(#BMB_bookmarksShowAllTop):not(#BMB_bookmarksShowAll):not(.menuitem-iconic.bookmark-item.menuitem-with-favicon.subviewbutton):not(#BMB_viewBookmarksToolbar):not(.openintabs-menuitem.subviewbutton.panel-subview-footer),
 menu-text:hover:not(.menubar-text) {
     appearance: none !important;
     padding: 3px 6px 3px 6px !important;
@@ -159,17 +129,19 @@ menu-text:hover:not(.menubar-text) {
 #goPopup,
 #bookmarksMenuPopup {
     appearance: none !important;
-    margin-bottom: 10px !important;
-    margin-left: 5px !important;
-    margin-right: 5px !important;
-    border-radius: 4px !important;
-    color: #fff !important;
-    background: #4A4A4F !important;
-    border: 1px solid #272727 !important;
-    box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.4) !important;
+    margin-left: -5px !important;
+    margin-right: -5px !important;
+    border-radius: 0px !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
 }
-menupopup:not(#goPopup):not(#bookmarksMenuPopup):not(#BMB_bookmarksPopup):not([placespopup="true"]) {
+menupopup:not(#goPopup):not(#bookmarksMenuPopup):not(#BMB_bookmarksPopup) {
+    appearance: none !important;
     background-color: transparent !important;
+    margin-left: -5px !important;
+    margin-right: -5px !important;
+    border: none !important;
 }}
 
 /* fix for tiled and maximized windows */
