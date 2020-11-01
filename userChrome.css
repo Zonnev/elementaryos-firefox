@@ -26,8 +26,8 @@ menuitem[disabled="true"],
 menu[disabled="true"] {
     color: gray !important;
 }
-menuitem:hover:not(#customization-uidensity-menuitem-compact):not(#customization-uidensity-menuitem-normal):not(#customization-uidensity-menuitem-touch):not(#BMB_viewBookmarksSidebar):not(#BMB_bookmarksShowAllTop):not(#BMB_bookmarksShowAll):not(.menuitem-iconic.bookmark-item.menuitem-with-favicon.subviewbutton):not(#BMB_viewBookmarksToolbar):not(.openintabs-menuitem.subviewbutton.panel-subview-footer),
-menu-text:hover:not(.menubar-text) {
+menuitem:hover:not(#customization-uidensity-menuitem-compact):not(#customization-uidensity-menuitem-normal):not(#customization-uidensity-menuitem-touch):not(#BMB_viewBookmarksSidebar):not(#BMB_bookmarksShowAllTop):not(#BMB_bookmarksShowAll):not(.subviewbutton):not(#BMB_viewBookmarksToolbar):not(.panel-subview-footer),
+menu:hover:not(#file-menu):not(#edit-menu):not(#view-menu):not(#history-menu):not(#bookmarksMenu):not(#tools-menu):not(#helpMenu):not(.subviewbutton) {
     appearance: none !important;
     padding: 3px 6px 3px 6px !important;
     color: #000 !important;
@@ -72,13 +72,22 @@ menuitem[disabled="true"]:-moz-lwtheme-brighttext,
 menu[disabled="true"]:-moz-lwtheme-brighttext {
     color: #96968F !important;
 }
-menuitem:hover:not(#customization-uidensity-menuitem-compact):not(#customization-uidensity-menuitem-normal):not(#customization-uidensity-menuitem-touch):not(#BMB_viewBookmarksSidebar):not(#BMB_bookmarksShowAllTop):not(#BMB_bookmarksShowAll):not(.menuitem-iconic.bookmark-item.menuitem-with-favicon.subviewbutton):not(#BMB_viewBookmarksToolbar):not(.openintabs-menuitem.subviewbutton.panel-subview-footer):-moz-lwtheme-brighttext,
-menu-text:hover:not(.menubar-text):-moz-lwtheme-brighttext {
+menuitem:hover:not(#customization-uidensity-menuitem-compact):not(#customization-uidensity-menuitem-normal):not(#customization-uidensity-menuitem-touch):not(#BMB_viewBookmarksSidebar):not(#BMB_bookmarksShowAllTop):not(#BMB_bookmarksShowAll):not(.subviewbutton):not(#BMB_viewBookmarksToolbar):not(.panel-subview-footer):-moz-lwtheme-brighttext,
+menu:hover:not(#file-menu):not(#edit-menu):not(#view-menu):not(#history-menu):not(#bookmarksMenu):not(#tools-menu):not(#helpMenu):not(.subviewbutton):-moz-lwtheme-brighttext {
     appearance: none !important;
     padding: 3px 6px 3px 6px !important;
     color: #fff !important;
     background: #5C5C61 !important;
 }
+menu:-moz-lwtheme-brighttext,
+menuitem:-moz-lwtheme-brighttext {
+    color: #fff !important;
+    box-shadow: none !important;
+}
+@media (prefers-color-scheme: light) {
+.menu-right:not([disabled="true"]):-moz-lwtheme-brighttext {
+    filter: brightness(500%) !important;
+}}
 #goPopup:-moz-lwtheme-brighttext,
 #bookmarksMenuPopup:-moz-lwtheme-brighttext {
     appearance: none !important;
@@ -105,7 +114,7 @@ menupopup:not(#goPopup):not(#bookmarksMenuPopup):not(#BMB_bookmarksPopup):-moz-l
     margin-left: 5px !important;
     margin-right: 5px !important;
     border-radius: 4px !important;
-    background: #4A4A4F !important;
+    background: #404040 !important;
     color: #fff !important;
     border: 1px solid #272727 !important;
     box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.4) !important;
@@ -119,12 +128,12 @@ menuitem[disabled="true"],
 menu[disabled="true"] {
     color: #96968F !important;
 }
-menuitem:hover:not(#customization-uidensity-menuitem-compact):not(#customization-uidensity-menuitem-normal):not(#customization-uidensity-menuitem-touch):not(#BMB_viewBookmarksSidebar):not(#BMB_bookmarksShowAllTop):not(#BMB_bookmarksShowAll):not(.menuitem-iconic.bookmark-item.menuitem-with-favicon.subviewbutton):not(#BMB_viewBookmarksToolbar):not(.openintabs-menuitem.subviewbutton.panel-subview-footer),
-menu-text:hover:not(.menubar-text) {
+menuitem:hover:not(#customization-uidensity-menuitem-compact):not(#customization-uidensity-menuitem-normal):not(#customization-uidensity-menuitem-touch):not(#BMB_viewBookmarksSidebar):not(#BMB_bookmarksShowAllTop):not(#BMB_bookmarksShowAll):not(.subviewbutton):not(#BMB_viewBookmarksToolbar):not(.panel-subview-footer),
+menu:hover:not(#file-menu):not(#edit-menu):not(#view-menu):not(#history-menu):not(#bookmarksMenu):not(#tools-menu):not(#helpMenu):not(.subviewbutton) {
     appearance: none !important;
     padding: 3px 6px 3px 6px !important;
     color: #fff !important;
-    background: #5C5C61 !important;
+    background: #717171 !important;
 }
 #goPopup,
 #bookmarksMenuPopup {
@@ -591,7 +600,6 @@ toolbar .toolbarbutton-1:hover > .toolbarbutton-badge-stack {
   padding: 0 !important;
   background: #d1d1d1 !important;
   border-top: 1px solid #979797 !important;
-  text-shadow: 0 1px 0 rgba(255,255,255, 0.4) !important;
 }
 #titlebar-content {
   margin-bottom: 0 !important; /* menubar fix */
@@ -606,7 +614,6 @@ toolbar .toolbarbutton-1:hover > .toolbarbutton-badge-stack {
 }
 .bookmark-item {
   padding: 3px 5px !important;
-  text-shadow: 0 1px 0 rgba(255,255,255, 0.4) !important;
 }
 #PersonalToolbar .toolbarbutton-1 {
   margin: 0px !important;
@@ -721,9 +728,6 @@ toolbar .toolbarbutton-1:hover > .toolbarbutton-badge-stack {
     background: #363636 !important;
     border-top: 1px solid #272727 !important;
 }
-menubar > menu[open="true"] {
-	color: #d1d1d1 !important;
-}
 .tab-label[selected="true"] {
   color: #FFF !important;
 }
@@ -772,13 +776,6 @@ menubar > menu[open="true"] {
 #customization-done-button {
 	color: #FFFFFF !important;
 }
-.bookmark-item{
-	color: #A9A9A9 !important;
-	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4) !important; 
-}
-#menubar-items {
-	color: #A9A9A9 !important;
-	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4) !important; 
 }}
 
 /* DARK MODE standalone */
@@ -869,9 +866,6 @@ menubar > menu[open="true"] {
     background: #363636 !important;
     border-top: 1px solid #272727 !important;
 }
-menubar > menu[open="true"]:-moz-lwtheme-brighttext {
-	color: #d1d1d1 !important;
-}
 .tab-label[selected="true"]:-moz-lwtheme-brighttext {
   color: #FFF !important;
 }
@@ -923,14 +917,7 @@ menubar > menu[open="true"]:-moz-lwtheme-brighttext {
 #customization-done-button:-moz-lwtheme-brighttext {
 	color: #FFFFFF !important;
 }
-.bookmark-item:-moz-lwtheme-brighttext {
-	color: #A9A9A9 !important;
-	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4) !important; 
-}
-#menubar-items:-moz-lwtheme-brighttext {
-	color: #A9A9A9 !important;
-	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4) !important; 
-}
+
 @media (prefers-color-scheme: light) {
 .titlebar-close:-moz-lwtheme-brighttext,
 .titlebar-min:-moz-lwtheme-brighttext,
@@ -1018,15 +1005,12 @@ menubar > menu[open="true"]:-moz-lwtheme-brighttext {
 }
 #main-window[privatebrowsingmode="temporary"] .tab-label {
 	color: #FFF !important;
-	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4) !important;
 }
 #main-window[privatebrowsingmode="temporary"] .menubar-text {
 	color: #FFF !important;
-	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4) !important;
 }
 #main-window[privatebrowsingmode="temporary"] toolbarbutton.bookmark-item:not(.subviewbutton) {
 	color: #FFF !important;
-	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4) !important;
 }
 @media (prefers-color-scheme: light) {
 #main-window[privatebrowsingmode="temporary"] .titlebar-close,
