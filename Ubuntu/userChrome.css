@@ -1004,6 +1004,7 @@ toolbar .toolbarbutton-1:hover > .toolbarbutton-badge-stack {
 }
 #main-window[privatebrowsingmode="temporary"] .tab-label {
 	color: #FFF !important;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4) !important;
 }
 #main-window[privatebrowsingmode="temporary"] .menubar-text {
 	color: #FFF !important;
