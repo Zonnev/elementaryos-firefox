@@ -16,6 +16,7 @@
     background: #F5F5F5 !important;
     border: 1px solid #B6B6B6 !important;
     box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.4) !important;
+    overflow: hidden !important;
 }
 menuseparator,
 toolbarseparator {
@@ -62,6 +63,7 @@ menupopup:not(#goPopup):not(#bookmarksMenuPopup):not(#BMB_bookmarksPopup) {
     color: #fff !important;
     border: 1px solid #272727 !important;
     box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.4) !important;
+    overflow: hidden !important;
 }
 menuseparator:-moz-lwtheme-brighttext,
 toolbarseparator:-moz-lwtheme-brighttext  {
@@ -118,6 +120,7 @@ menupopup:not(#goPopup):not(#bookmarksMenuPopup):not(#BMB_bookmarksPopup):-moz-l
     color: #fff !important;
     border: 1px solid #272727 !important;
     box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.4) !important;
+    overflow: hidden !important;
 }
 menuseparator,
 toolbarseparator {
