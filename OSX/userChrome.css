@@ -27,7 +27,7 @@ menuitem[disabled="true"],
 menu[disabled="true"] {
     color: gray !important;
 }
-menuitem:hover:not([disabled="true"]):not(#customization-uidensity-menuitem-compact):not(#customization-uidensity-menuitem-normal):not(#customization-uidensity-menuitem-touch):not(#BMB_viewBookmarksSidebar):not(#BMB_bookmarksShowAllTop):not(#BMB_bookmarksShowAll):not(.subviewbutton):not(#BMB_viewBookmarksToolbar):not(.panel-subview-footer),
+menuitem:hover:not([disabled="true"]):not(.menuitem-iconic):not(#customization-uidensity-menuitem-compact):not(#customization-uidensity-menuitem-normal):not(#customization-uidensity-menuitem-touch):not(#BMB_viewBookmarksSidebar):not(#BMB_bookmarksShowAllTop):not(#BMB_bookmarksShowAll):not(.subviewbutton):not(#BMB_viewBookmarksToolbar):not(.panel-subview-footer),
 menu:hover:not([disabled="true"]):not(#file-menu):not(#edit-menu):not(#view-menu):not(#history-menu):not(#bookmarksMenu):not(#tools-menu):not(#helpMenu):not(.subviewbutton) {
     appearance: none !important;
     padding: 3px 6px 3px 6px !important;
@@ -105,7 +105,7 @@ menu[disabled="true"]:-moz-lwtheme-brighttext {
     background: rgba(66,66,71,1) !important;
     box-shadow: inset 0 2px 2px 0 rgba(0,0,0,0.2) !important;
 }
-menuitem:hover:not([disabled="true"]):not(#customization-uidensity-menuitem-compact):not(#customization-uidensity-menuitem-normal):not(#customization-uidensity-menuitem-touch):not(#BMB_viewBookmarksSidebar):not(#BMB_bookmarksShowAllTop):not(#BMB_bookmarksShowAll):not(.subviewbutton):not(#BMB_viewBookmarksToolbar):not(.panel-subview-footer):-moz-lwtheme-brighttext,
+menuitem:hover:not([disabled="true"]):not(.menuitem-iconic):not(#customization-uidensity-menuitem-compact):not(#customization-uidensity-menuitem-normal):not(#customization-uidensity-menuitem-touch):not(#BMB_viewBookmarksSidebar):not(#BMB_bookmarksShowAllTop):not(#BMB_bookmarksShowAll):not(.subviewbutton):not(#BMB_viewBookmarksToolbar):not(.panel-subview-footer):-moz-lwtheme-brighttext,
 menu:hover:not([disabled="true"]):not(#file-menu):not(#edit-menu):not(#view-menu):not(#history-menu):not(#bookmarksMenu):not(#tools-menu):not(#helpMenu):not(.subviewbutton):-moz-lwtheme-brighttext {
     appearance: none !important;
     padding: 3px 6px 3px 6px !important;
@@ -172,7 +172,7 @@ menu[disabled="true"] {
     background: rgba(66,66,71,1) !important;
     box-shadow: inset 0 2px 2px 0 rgba(0,0,0,0.2) !important;
 }
-menuitem:hover:not([disabled="true"]):not(#customization-uidensity-menuitem-compact):not(#customization-uidensity-menuitem-normal):not(#customization-uidensity-menuitem-touch):not(#BMB_viewBookmarksSidebar):not(#BMB_bookmarksShowAllTop):not(#BMB_bookmarksShowAll):not(.subviewbutton):not(#BMB_viewBookmarksToolbar):not(.panel-subview-footer),
+menuitem:hover:not([disabled="true"]):not(.menuitem-iconic):not(#customization-uidensity-menuitem-compact):not(#customization-uidensity-menuitem-normal):not(#customization-uidensity-menuitem-touch):not(#BMB_viewBookmarksSidebar):not(#BMB_bookmarksShowAllTop):not(#BMB_bookmarksShowAll):not(.subviewbutton):not(#BMB_viewBookmarksToolbar):not(.panel-subview-footer),
 menu:hover:not([disabled="true"]):not(#file-menu):not(#edit-menu):not(#view-menu):not(#history-menu):not(#bookmarksMenu):not(#tools-menu):not(#helpMenu):not(.subviewbutton) {
     appearance: none !important;
     padding: 3px 6px 3px 6px !important;
@@ -479,6 +479,10 @@ toolbar .toolbarbutton-1:hover > .toolbarbutton-badge-stack {
 }
 #nav-bar-overflow-button {
   margin-right: -8px !important;
+}
+#downloads-button,
+#fxa-toolbar-menu-button {
+    margin-right: 4px !important;
 }
 
 /* tabs */
