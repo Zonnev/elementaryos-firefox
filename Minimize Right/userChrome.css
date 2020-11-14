@@ -560,16 +560,15 @@ menupopup:not(#goPopup):not(#bookmarksMenuPopup):not(#BMB_bookmarksPopup) {
   min-height: 25px !important;
 }
 #urlbar[focused="true"], #searchbar[focused="true"] {
-  border: 1px solid #3D95DC !important;
-  border-radius: 2.5px !important; 
+  border: 1px solid #B4B4B4 !important;
+  border-radius: 4px !important; 
   background: linear-gradient(to bottom, #eeeeee, #ffffff) !important;
-  box-shadow: inset 0 0 0 1px rgba(0,0,0, 0.06), 0 1px 0 0 rgba(255,255,255, 0.3) !important;
 }
 #searchbar:not([focused="true"]), #urlbar:not([focused="true"]) {
-  border: 1px solid #B8B8B8 !important;
+  border: 1px solid #B4B4B4 !important;
   border-radius: 2.5px !important; 
   background: linear-gradient(to bottom, #eeeeee, #ffffff) !important;
-  box-shadow: inset 0 0 0 1px rgba(0,0,0, 0.06), 0 1px 0 0 rgba(255,255,255, 0.3) !important;
+  box-shadow: 0 1px 0 0 rgb(255,255,255,0.8) !important;
 }
 #urlbar-background {
   border: none !important;
@@ -703,7 +702,6 @@ toolbar .toolbarbutton-1:hover > .toolbarbutton-badge-stack {
   display: none !important; /* don't show border between tabs  */
 }
 .tabbrowser-tab:not([visuallyselected="true"]) {
-  border-left: 1px solid transparent !important;
   border-right: 1px solid transparent !important;
   border-image: linear-gradient(to bottom, transparent, rgba(0,0,0, 0.1)) 1 !important;
 }
@@ -723,7 +721,7 @@ toolbar .toolbarbutton-1:hover > .toolbarbutton-badge-stack {
   border-top-right-radius: 4px !important;
 }
 .tab-background {
-  border-top: 0 !important;
+	background: unset !important;
 }
 .tab-background[selected="true"] {
   background-attachment: none !important;
@@ -879,7 +877,7 @@ toolbar .toolbarbutton-1:hover > .toolbarbutton-badge-stack {
 
 /* focus fix */
 #TabsToolbar:-moz-window-inactive {
-	background: linear-gradient(#353535, #373737) !important;
+	background: #3A3A3A !important;
     border-top: 1px solid #272727 !important;
 	border-bottom: 1px solid rgb(36, 38, 39) !important;
 }
@@ -887,11 +885,11 @@ toolbar .toolbarbutton-1:hover > .toolbarbutton-badge-stack {
 	border-left: 1px solid #272727 !important;
 	border-right: 1px solid #272727 !important;
 	border-bottom: 1px solid #272727 !important;
-    border-top: 1px solid #3D95DC !important;
     padding-bottom: 1px !important;
 }
 .tab-background[selected="true"]:-moz-window-inactive {
-	background: linear-gradient(#363636, #343434) !important;
+	background: linear-gradient(#3C3C3C, #3A3A3A) !important;
+	box-shadow: none !important;
 }
 #toolbar-menubar:-moz-window-inactive:not(:-moz-lwtheme-brighttext),
 #PersonalToolbar:-moz-window-inactive:not(:-moz-lwtheme-brighttext) {
@@ -906,46 +904,59 @@ toolbar .toolbarbutton-1:hover > .toolbarbutton-badge-stack {
 .tab-label[selected="true"]:-moz-window-inactive {
   color: #FFF !important;
 }
-.tab-label:-moz-window-inactive{
-	color: #fff !important;
-}
-
 
 /* elements DARK MODE */
 #search-container {
     margin-top: 1.5px !important;
 }
 #urlbar[focused="true"], #searchbar[focused="true"] {
-    border: 1px solid #3D95DC !important;
-    border-radius: 2.5px !important; 
+    border: 1px solid #262626 !important;
+    border-radius: 4px !important; 
 	background: linear-gradient(#3C3C3C, #404040) !important;
-	box-shadow: inset 0 0 0 1px rgb(58, 58, 58), 0 1px 0 0 rgb(64, 64, 64) !important; } 
-
+}
 #searchbar:not([focused="true"]), #urlbar:not([focused="true"]) {
     border: 1px solid #272727 !important;
     border-radius: 2.5px !important; 
 	background: linear-gradient(#3C3C3C, #404040) !important;
-	box-shadow: inset 0 0 0 1px rgb(58, 58, 58), 0 1px 0 0 rgb(64, 64, 64) !important;
+	box-shadow: 0 1px 0 0 rgb(255,255,255,0.1) !important;
 }
 #urlbar-background {
     border: none !important;
     background: none !important;
 }
+.urlbarView-body-inner,
+.search-one-offs {
+    border-top: 1px solid #5F6670 !important;
+}
+:root {
+    --urlbar-separator-color: #5F6670 !important;
+}
 #TabsToolbar {
-	background: linear-gradient(#353535, #373737) !important;
+	background: #363636 !important;
     border-top: 1px solid #272727 !important;
 	border-bottom: 1px solid rgb(36, 38, 39) !important;
+}
+.tabbrowser-tab:not([visuallyselected="true"]) {
+    margin-right: -1px !important;
+    border-right: 1px solid transparent !important;
+    border-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.3)) 1 !important;
 }
 .tabbrowser-tab[visuallyselected="true"] {
 	border-left: 1px solid #272727 !important;
 	border-right: 1px solid #272727 !important;
 	border-bottom: 1px solid #272727 !important;
-    border-top: 1px solid #3D95DC !important;
-    box-shadow: 0 0 1px 0 #272727 !important;
+	box-shadow: 0 0 2px 0 rgba(0,0,0,0.3) !important;
     padding-bottom: 1px !important;
 }
+.tab-content:not([selected]) > .tab-icon-image {
+    filter: grayscale(1) brightness(50%) !important;
+}
 .tab-background[selected="true"] {
-	background: linear-gradient(#363636, #343434) !important;
+	background: linear-gradient(#3C3C3C, #3A3A3A) !important;
+	box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.08), inset 0 0 1px 0 rgba(255,255,255,0.05) !important;
+}
+.tab-background {
+	background: unset !important;
 }
 #PersonalToolbar {
     background: #363636 !important;
@@ -1014,11 +1025,6 @@ toolbar .toolbarbutton-1:hover > .toolbarbutton-badge-stack {
     background-color: transparent !important;
     appearance: none !important;
 }
-:root[tabsintitlebar][sizemode="normal"]:not([inFullscreen]) #TabsToolbar:-moz-lwtheme-brighttext,
-:root[tabsintitlebar][sizemode="maximized"] #TabsToolbar:-moz-lwtheme-brighttext,
-:root[tabsintitlebar] #toolbar-menubar):-moz-lwtheme-brighttext {
-    appearance: none !important;
-}
 }}
 
 #back-button:active > .toolbarbutton-icon:-moz-lwtheme-brighttext,
@@ -1034,6 +1040,10 @@ toolbar .toolbarbutton-1:hover > .toolbarbutton-badge-stack {
 #tabs-newtab-button .toolbarbutton-icon:-moz-lwtheme-brighttext:-moz-window-inactive,
 #TabsToolbar .tab-close-button:-moz-lwtheme-brighttext:-moz-window-inactive {
      opacity: 0.7 !important;
+}
+.tab-background[selected="true"]:-moz-lwtheme-brighttext:-moz-window-inactive {
+	background: linear-gradient(#3C3C3C, #3A3A3A) !important;
+	box-shadow: none !important;
 }
 
 #search-container:-moz-lwtheme-brighttext {
@@ -1055,35 +1065,46 @@ toolbar .toolbarbutton-1:hover > .toolbarbutton-badge-stack {
 	border-bottom: 1px solid #272727 !important;
 }
 #urlbar[focused="true"]:-moz-lwtheme-brighttext, #searchbar[focused="true"]:-moz-lwtheme-brighttext {
-    border: 1px solid #3D95DC !important;
-    border-radius: 2.5px !important; 
+    border: 1px solid #262626 !important;
+    border-radius: 4px !important; 
 	background: linear-gradient(#3C3C3C, #404040) !important;
-	box-shadow: inset 0 0 0 1px rgb(58, 58, 58), 0 1px 0 0 rgb(64, 64, 64) !important; } 
-
+}
 #searchbar:not([focused="true"]):-moz-lwtheme-brighttext, #urlbar:not([focused="true"]):-moz-lwtheme-brighttext {
     border: 1px solid #272727 !important;
     border-radius: 2.5px !important; 
 	background: linear-gradient(#3C3C3C, #404040) !important;
-	box-shadow: inset 0 0 0 1px rgb(58, 58, 58), 0 1px 0 0 rgb(64, 64, 64) !important;
+	box-shadow: 0 1px 0 0 rgb(255,255,255,0.1) !important;
 }
 #urlbar-background:-moz-lwtheme-brighttext {
     border: none !important;
     background: none !important;
 }
 #TabsToolbar:-moz-lwtheme-brighttext {
-	background: linear-gradient(#353535, #373737) !important;
+	background: #363636 !important;
     border-top: 1px solid #272727 !important;
 	border-bottom: 1px solid rgb(36, 38, 39) !important;
+}
+.tabbrowser-tab:not([visuallyselected="true"]):-moz-lwtheme-brighttext {
+    margin-right: -1px !important;
+    border-right: 1px solid transparent !important;
+    border-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.3)) 1 !important;
 }
 .tabbrowser-tab[visuallyselected="true"]:-moz-lwtheme-brighttext {
 	border-left: 1px solid #272727 !important;
 	border-right: 1px solid #272727 !important;
 	border-bottom: 1px solid #272727 !important;
-    border-top: 1px solid #3D95DC !important;
+	box-shadow: 0 0 2px 0 rgba(0,0,0,0.3) !important;
     padding-bottom: 1px !important;
 }
+.tab-content:not([selected]) > .tab-icon-image:-moz-lwtheme-brighttext {
+    filter: grayscale(1) brightness(50%) !important;
+}
 .tab-background[selected="true"]:-moz-lwtheme-brighttext {
-	background: linear-gradient(#363636, #343434) !important;
+	background: linear-gradient(#3C3C3C, #3A3A3A) !important;
+	box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.08), inset 0 0 1px 0 rgba(255,255,255,0.05) !important;
+}
+.tab-background:-moz-lwtheme-brighttext {
+	background: unset !important;
 }
 #PersonalToolbar:-moz-lwtheme-brighttext {
     background: #363636 !important;
@@ -1166,6 +1187,15 @@ toolbar .toolbarbutton-1:hover > .toolbarbutton-badge-stack {
   border-top: 0px !important;
   border-bottom: 0px !important;
   background: linear-gradient(to right, #5E4BC5, #a24c8d) !important;
+}
+#main-window[privatebrowsingmode="temporary"] #searchbar:not([focused="true"]), 
+#main-window[privatebrowsingmode="temporary"] #urlbar:not([focused="true"]) {
+  border: 1px solid #4E0082 !important;
+  box-shadow: 0 1px 0 0 rgb(255,255,255,0.3) !important;
+}
+#main-window[privatebrowsingmode="temporary"] #searchbar[focused="true"], 
+#main-window[privatebrowsingmode="temporary"] #urlbar[focused="true"] {
+  border: 1px solid #4E0082 !important;
 }
 #main-window[privatebrowsingmode="temporary"] #TabsToolbar {
   background: linear-gradient(to right, #5E4BC5, #a24c8d) !important;
