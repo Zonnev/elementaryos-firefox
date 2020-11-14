@@ -523,6 +523,7 @@ menupopup:not(#goPopup):not(#bookmarksMenuPopup):not(#BMB_bookmarksPopup) {
 }
 
 /* urlbar-megabar */
+
 #urlbar-container, #search-container {
   -moz-window-dragging: drag !important;
 }
