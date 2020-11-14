@@ -523,7 +523,9 @@ menupopup:not(#goPopup):not(#bookmarksMenuPopup):not(#BMB_bookmarksPopup) {
 }
 
 /* urlbar-megabar */
-
+#urlbar-input-container {
+    border-radius: 2.5px !important;
+}
 #urlbar-container, #search-container {
   -moz-window-dragging: drag !important;
 }
