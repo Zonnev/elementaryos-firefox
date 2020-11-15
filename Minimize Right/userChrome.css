@@ -884,7 +884,9 @@ toolbar .toolbarbutton-1:hover > .toolbarbutton-badge-stack {
 #tabs-newtab-button .toolbarbutton-icon:-moz-window-inactive,
 #TabsToolbar .tab-close-button:-moz-window-inactive,
 .tab-label[selected="true"]:-moz-window-inactive,
-.tab-label:not([selected="true"]):-moz-window-inactive {
+.tab-label:not([selected="true"]):-moz-window-inactive,
+.menubar-text:-moz-window-inactive,
+.bookmark-item:-moz-window-inactive {
      opacity: 0.7 !important;
 }
 .tab-background[selected="true"]:-moz-window-inactive {
@@ -910,6 +912,14 @@ toolbar .toolbarbutton-1:hover > .toolbarbutton-badge-stack {
 }
 #urlbar:not([focused="true"]):-moz-window-inactive {
     border: 1px solid #313131 !important;
+}
+#PersonalToolbar:-moz-window-inactive {
+    background: #3D3D3D !important;
+    border-top: 1px solid #313131 !important;
+}
+#toolbar-menubar:-moz-window-inactive {
+    background: #3D3D3D !important;
+    border-top: 1px solid #313131 !important;
 }
 
 /* elements DARK MODE */
@@ -1087,7 +1097,9 @@ toolbar .toolbarbutton-1:hover > .toolbarbutton-badge-stack {
 #tabs-newtab-button .toolbarbutton-icon:-moz-lwtheme-brighttext:-moz-window-inactive,
 #TabsToolbar .tab-close-button:-moz-lwtheme-brighttext:-moz-window-inactive,
 .tab-label[selected="true"]:-moz-lwtheme-brighttext:-moz-window-inactive,
-.tab-label:not([selected="true"]):-moz-lwtheme-brighttext:-moz-window-inactive  {
+.tab-label:not([selected="true"]):-moz-lwtheme-brighttext:-moz-window-inactive,
+.menubar-text:-moz-lwtheme-brighttext:-moz-window-inactive,
+.bookmark-item:-moz-lwtheme-brighttext:-moz-window-inactive {
      opacity: 0.7 !important;
 }
 .tab-background[selected="true"]:-moz-lwtheme-brighttext:-moz-window-inactive {
@@ -1113,6 +1125,14 @@ toolbar .toolbarbutton-1:hover > .toolbarbutton-badge-stack {
 }
 #urlbar:not([focused="true"]):-moz-lwtheme-brighttext:-moz-window-inactive {
     border: 1px solid #313131 !important;
+}
+#PersonalToolbar:-moz-lwtheme-brighttext:-moz-window-inactive {
+    background: #3D3D3D !important;
+    border-top: 1px solid #313131 !important;
+}
+#toolbar-menubar:-moz-lwtheme-brighttext:-moz-window-inactive {
+    background: #3D3D3D !important;
+    border-top: 1px solid #313131 !important;
 }
 
 /* elements standalone dark mode */
