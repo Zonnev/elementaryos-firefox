@@ -791,6 +791,7 @@ toolbar .toolbarbutton-1:hover > .toolbarbutton-badge-stack {
 .tab-label {
   -moz-box-flex: 1 !important;
   margin-bottom: -1px !important;
+  margin-left: 4px !important;
   color: #4b4b4b !important;
   text-align: center !important;
   text-shadow: 0 1px 0 rgba(255,255,255, 0.4) !important;
