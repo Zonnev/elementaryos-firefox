@@ -405,24 +405,24 @@ menupopup:not(#goPopup):not(#bookmarksMenuPopup):not(#BMB_bookmarksPopup) {
 }
 
 /* focus window fix */
-.titlebar-buttonbox:-moz-window-inactive {
-  opacity: 0.7 !important;
-}
 #TabsToolbar:-moz-window-inactive {
   background: #e2e2e2 !important;
   border-top: 1px solid #b6b6b6 !important;
   border-bottom: 1px solid #b6b6b6 !important;
 }
-#toolbar-menubar:-moz-window-inactive:not(:-moz-lwtheme-brighttext),
-#PersonalToolbar:-moz-window-inactive:not(:-moz-lwtheme-brighttext) {
+#toolbar-menubar:-moz-window-inactive,
+#PersonalToolbar:-moz-window-inactive {
   background: #e2e2e2 !important;
   border-top: 1px solid #b6b6b6 !important;
 }
-.bookmark-item:-moz-window-inactive:not(:-moz-lwtheme-brighttext) {
-  color: #6C6B6B !important;
-}
-#menubar-items:-moz-window-inactive:not(:-moz-lwtheme-brighttext) {
-  opacity: 0.7 !important;
+#new-tab-button .toolbarbutton-icon:-moz-window-inactive,
+#tabs-newtab-button .toolbarbutton-icon:-moz-window-inactive,
+#TabsToolbar .tab-close-button:-moz-window-inactive,
+.tab-label[selected="true"]:-moz-window-inactive,
+.tab-label:not([selected="true"]):-moz-window-inactive,
+.menubar-text:-moz-window-inactive,
+.bookmark-item:-moz-window-inactive {
+     opacity: 0.7 !important;
 }
 .tab-background[selected="true"]:-moz-window-inactive {
   background: #e3e3e3 !important;
