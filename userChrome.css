@@ -691,7 +691,6 @@ toolbar .toolbarbutton-1:hover > .toolbarbutton-badge-stack {
 }
 .tabbrowser-tab[pinned] {
   max-height: 30px !important; /* so tabbar border shows */
-  border-bottom: 1px solid #898989 !important;
 }
 .tabbrowser-tab:after {
   display: none !important; /* don't show border between tabs  */
