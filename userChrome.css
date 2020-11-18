@@ -695,9 +695,6 @@ toolbar .toolbarbutton-1:hover > .toolbarbutton-badge-stack {
   border-right: 1px solid transparent !important;
   border-image: linear-gradient(to bottom, transparent, rgba(0,0,0, 0.1)) 1 !important;
 }
-.tabbrowser-tab[visuallyselected="true"] {
-  z-index: 0 !important;
-}
 .tabbrowser-tab[selected="true"] {
   border-top-left-radius: 4px !important;
   border-top-right-radius: 4px !important;
