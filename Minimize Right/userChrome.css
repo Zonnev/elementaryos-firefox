@@ -45,7 +45,11 @@ menulist[open="true"] > .in-menulist > menuitem:hover:not([disabled="true"]) {
     color: #000 !important;
     background: #E9E9E9 !important;
 }
+menubar > menu > menupopup > menuitem:hover:not([disabled="true"]),
+menubar > menu > menupopup > menu > menupopup > menuitem:hover:not([disabled="true"]),
+menubar > menu > menupopup > menu:hover,
 menubar > menu > menupopup > menu[open="true"],
+popupset > menupopup > menu > menupopup > menuitem:hover:not([disabled="true"]),
 popupset > menupopup > menu[open="true"],
 popupset > menupopup > menuitem:hover:not([disabled="true"]),
 popupset > menupopup > menugroup > menuitem:hover:not([disabled="true"]) {
@@ -54,15 +58,6 @@ popupset > menupopup > menugroup > menuitem:hover:not([disabled="true"]) {
     padding: 5px 6px 5px 6px !important;
     color: #000 !important;
     background: #E9E9E9 !important;
-}
-menu[open="true"] > menupopup > menuitem:hover:not([disabled="true"]):not(#customization-uidensity-menuitem-compact):not(#customization-uidensity-menuitem-normal):not(#customization-uidensity-menuitem-touch):not(#BMB_viewBookmarksSidebar):not(#BMB_bookmarksShowAllTop):not(#BMB_bookmarksShowAll):not(.subviewbutton):not(#BMB_viewBookmarksToolbar):not(.panel-subview-footer),
-menu:hover:not([disabled="true"]):not(#file-menu):not(#edit-menu):not(#view-menu):not(#history-menu):not(#bookmarksMenu):not(#tools-menu):not(#helpMenu):not(.subviewbutton) {
-    appearance: none !important;
-    margin: 0px !important;
-    padding: 5px 6px 5px 6px !important;
-    color: #000 !important;
-    background: #E9E9E9 !important;
-    background-image: none !important;
 }
 menuitem[type="checkbox"] > .menu-iconic-left > .menu-iconic-icon,
 menuitem[type="radio"] > .menu-iconic-left > .menu-iconic-icon,
@@ -205,18 +200,14 @@ menulist[open="true"] > .in-menulist > menuitem:hover:not([disabled="true"]):-mo
     color: #fff !important;
     background: #5C5C61 !important;
 }
+menubar > menu > menupopup > menuitem:hover:not([disabled="true"]):-moz-lwtheme-brighttext,
+menubar > menu > menupopup > menu > menupopup > menuitem:hover:not([disabled="true"]):-moz-lwtheme-brighttext,
+menubar > menu > menupopup > menu:hover:-moz-lwtheme-brighttext,
 menubar > menu > menupopup > menu[open="true"]:-moz-lwtheme-brighttext,
+popupset > menupopup > menu > menupopup > menuitem:hover:not([disabled="true"]):-moz-lwtheme-brighttext,
 popupset > menupopup > menu[open="true"]:-moz-lwtheme-brighttext,
 popupset > menupopup > menuitem:hover:not([disabled="true"]):-moz-lwtheme-brighttext,
 popupset > menupopup > menugroup > menuitem:hover:not([disabled="true"]):-moz-lwtheme-brighttext {
-    appearance: none !important;
-    margin: 0px !important;
-    padding: 5px 6px 5px 6px !important;
-    color: #fff !important;
-    background: #5C5C61 !important;
-}
-menu[open="true"] > menupopup > menuitem:hover:not([disabled="true"]):not(#customization-uidensity-menuitem-compact):not(#customization-uidensity-menuitem-normal):not(#customization-uidensity-menuitem-touch):not(#BMB_viewBookmarksSidebar):not(#BMB_bookmarksShowAllTop):not(#BMB_bookmarksShowAll):not(.subviewbutton):not(#BMB_viewBookmarksToolbar):not(.panel-subview-footer):-moz-lwtheme-brighttext,
-menu:hover:not([disabled="true"]):not(#file-menu):not(#edit-menu):not(#view-menu):not(#history-menu):not(#bookmarksMenu):not(#tools-menu):not(#helpMenu):not(.subviewbutton):-moz-lwtheme-brighttext {
     appearance: none !important;
     margin: 0px !important;
     padding: 5px 6px 5px 6px !important;
@@ -323,18 +314,14 @@ menulist[open="true"] > .in-menulist > menuitem:hover:not([disabled="true"]) {
     color: #fff !important;
     background: #717171 !important;
 }
+menubar > menu > menupopup > menuitem:hover:not([disabled="true"]),
+menubar > menu > menupopup > menu > menupopup > menuitem:hover:not([disabled="true"]),
+menubar > menu > menupopup > menu:hover,
 menubar > menu > menupopup > menu[open="true"],
+popupset > menupopup > menu > menupopup > menuitem:hover:not([disabled="true"]),
 popupset > menupopup > menu[open="true"],
 popupset > menupopup > menuitem:hover:not([disabled="true"]),
 popupset > menupopup > menugroup > menuitem:hover:not([disabled="true"]) {
-    appearance: none !important;
-    margin: 0px !important;
-    padding: 5px 6px 5px 6px !important;
-    color: #fff !important;
-    background: #717171 !important;
-}
-menu[open="true"] > menupopup > menuitem:hover:not([disabled="true"]):not(#customization-uidensity-menuitem-compact):not(#customization-uidensity-menuitem-normal):not(#customization-uidensity-menuitem-touch):not(#BMB_viewBookmarksSidebar):not(#BMB_bookmarksShowAllTop):not(#BMB_bookmarksShowAll):not(.subviewbutton):not(#BMB_viewBookmarksToolbar):not(.panel-subview-footer),
-menu:hover:not([disabled="true"]):not(#file-menu):not(#edit-menu):not(#view-menu):not(#history-menu):not(#bookmarksMenu):not(#tools-menu):not(#helpMenu):not(.subviewbutton) {
     appearance: none !important;
     margin: 0px !important;
     padding: 5px 6px 5px 6px !important;
@@ -762,11 +749,11 @@ toolbar .toolbarbutton-1:hover > .toolbarbutton-badge-stack {
 }
 #TabsToolbar tab .close-icon:hover {
   -moz-image-region: unset !important;
-  background-color: rgba(0,0,0,0.1) !important;
+  background-color: none !important;
   background-clip: padding-box !important;
 }
 #TabsToolbar tab .close-icon:hover:active {
-  background-color: rgba(0,0,0,0.15) !important;
+  background-color: rgba(0,0,0,0.1) !important;
 }
 
 /* touch density adjustment */
@@ -902,7 +889,7 @@ toolbar > toolbaritem > menubar > menu[open] {
 #search-container {
     margin-top: 1.5px !important;
 }
-#urlbar[focused="true"], #searchbar[focused="true"] {
+#urlbar[focused="true"] {
     border: 1px solid #262626 !important;
     border-radius: 4px !important; 
 	background: linear-gradient(#3C3C3C, #404040) !important;
@@ -930,10 +917,23 @@ toolbar > toolbaritem > menubar > menu[open] {
 :root {
     --urlbar-separator-color: #5F6670 !important;
 }
+.urlbarView-row:not([type="tip"]):not([type="dynamic"])[selected] > .urlbarView-row-inner,
+.search-one-offs button[selected],
+.autocomplete-richlistitem[selected] {
+    background: rgba(0,0,0,0.2) !important;
+}
+#PopupSearchAutoComplete {
+	background: linear-gradient(#3C3C3C, #404040) !important;
+    border: 1px solid #262626 !important;
+    border-radius: 3.5px !important;
+}
 #TabsToolbar {
 	background: #363636 !important;
     border-top: 1px solid #272727 !important;
 	border-bottom: 1px solid rgb(36, 38, 39) !important;
+}
+#TabsToolbar tab .close-icon:hover:active {
+  background-color: rgba(255,255,255,0.1) !important;
 }
 .tab-content:not([selected]) > .tab-icon-image {
     filter: grayscale(1) brightness(50%) !important;
@@ -1108,9 +1108,8 @@ toolbar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :hov
 #nav-bar:-moz-lwtheme-brighttext {
     -moz-appearance: none !important;
     border-radius: 3.5px 3.5px 0 0 !important;
-    border-top: 1px solid #4A4A4A !important;
-    border-bottom: 1px solid #3B3B3B !important;
 	background: linear-gradient(#3C3C3C, #363636) !important;
+	box-shadow: inset 0 1px 0 0 #4A4A4A, inset 0 0 1px 0 #3B3B3B !important;
 }
 #navigator-toolbox:-moz-lwtheme-brighttext {
     border: none !important;
@@ -1120,7 +1119,7 @@ toolbar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :hov
 	background: linear-gradient(#3C3C3C, #363636) !important;
 	border-bottom: 1px solid #272727 !important;
 }
-#urlbar[focused="true"]:-moz-lwtheme-brighttext, #searchbar[focused="true"]:-moz-lwtheme-brighttext {
+#urlbar[focused="true"]:-moz-lwtheme-brighttext {
     border: 1px solid #262626 !important;
     border-radius: 4px !important; 
 	background: linear-gradient(#3C3C3C, #404040) !important;
@@ -1132,7 +1131,6 @@ toolbar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :hov
 	box-shadow: inset 0 1px 1px 0 rgba(0,0,0,0.1), 0 1px 0 0 rgb(255,255,255,0.05) !important;
 }
 #urlbar:not([focused="true"]):-moz-lwtheme-brighttext {
-    margin-top: -1px !important;
     border: 1px solid #272727 !important;
     border-radius: 2.5px !important; 
 	background: linear-gradient(#3C3C3C, #404040) !important;
@@ -1141,6 +1139,19 @@ toolbar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :hov
 #urlbar-background:-moz-lwtheme-brighttext {
     border: none !important;
     background: none !important;
+}
+.urlbarView-row:not([type="tip"]):not([type="dynamic"])[selected] > .urlbarView-row-inner:-moz-lwtheme-brighttext,
+.search-one-offs button[selected]:-moz-lwtheme-brighttext,
+.autocomplete-richlistitem[selected]:-moz-lwtheme-brighttext {
+    background: rgba(0,0,0,0.2) !important;
+}
+#PopupSearchAutoComplete:-moz-lwtheme-brighttext {
+	background: linear-gradient(#3C3C3C, #404040) !important;
+    border: 1px solid #262626 !important;
+    border-radius: 3.5px !important;
+}
+#TabsToolbar tab .close-icon:hover:active:-moz-lwtheme-brighttext {
+  background-color: rgba(255,255,255,0.1) !important;
 }
 #TabsToolbar:-moz-lwtheme-brighttext {
 	background: #363636 !important;
@@ -1258,6 +1269,14 @@ toolbar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :hov
     margin-left: 3px !important;
     filter: invert(1) brightness(500%) !important;
 }
+@media (prefers-color-scheme: dark) {
+.button-menu-dropmarker:-moz-lwtheme-brighttext {
+    margin-left: 3px !important;
+    filter: none !important;
+}
+.expander-down > .button-box:-moz-lwtheme-brighttext, .expander-up > .button-box:-moz-lwtheme-brighttext {
+    filter: none !important;
+}}
 .checkbox-check:-moz-lwtheme-brighttext {
     appearance: none !important;
     height: 16px !important;
@@ -1280,9 +1299,8 @@ toolbar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :hov
 #main-window[privatebrowsingmode="temporary"] #nav-bar {
   -moz-appearance: none !important;
   border-radius: 3.5px 3.5px 0 0 !important;
-  border-top: 1px solid rgba(255,255,255,0.1) !important;
-  border-bottom: 1px solid rgba(255,255,255,0.05) !important;
   background: linear-gradient(to right, #5E4BC5, #a24c8d) !important;
+  box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.1), inset 0 0 1px 0 rgba(255,255,255,0.05) !important;
 }
 #main-window[privatebrowsingmode="temporary"]:root[sizemode="fullscreen"] #nav-bar {
   -moz-appearance: none !important;
@@ -1290,22 +1308,75 @@ toolbar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :hov
   border-bottom: 0px !important;
   background: linear-gradient(to right, #5E4BC5, #a24c8d) !important;
 }
-#main-window[privatebrowsingmode="temporary"] #searchbar:not([focused="true"]):-moz-lwtheme-brighttext {
-  margin-top: -2px !important;
-  border: 1px solid #4E0082 !important;
-  box-shadow: inset 0 1px 1px 0 rgba(0,0,0,0.3), 0 1px 0 0 rgb(255,255,255,0.2) !important;
-}
 #main-window[privatebrowsingmode="temporary"] #searchbar:not([focused="true"]) {
-  border: 1px solid #4E0082 !important;
-  box-shadow: inset 0 1px 1px 0 rgba(0,0,0,0.3), 0 1px 0 0 rgb(255,255,255,0.2) !important;
+  border: 1px solid #4e0082 !important;
+  border-radius: 2.5px !important; 
+  background: #A267A9 !important;
+  box-shadow: inset 0 1px 1px 0 rgba(0,0,0,0.1), 0 1px 0 0 rgba(255,255,255,0.1) !important;
 }
 #main-window[privatebrowsingmode="temporary"] #urlbar:not([focused="true"]) {
-  border: 1px solid #4E0082 !important;
-  box-shadow: inset 0 1px 1px 0 rgba(0,0,0,0.3), 0 1px 0 0 rgb(255,255,255,0.3) !important;
+  border: 1px solid #4e0082 !important;
+  border-radius: 2.5px !important; 
+  background: linear-gradient(to right, #8266C4, #A267A9) !important;
+  box-shadow: inset 0 1px 1px 0 rgba(0,0,0,0.1), 0 1px 0 0 rgba(255,255,255,0.2) !important;
 }
-#main-window[privatebrowsingmode="temporary"] #searchbar[focused="true"], 
 #main-window[privatebrowsingmode="temporary"] #urlbar[focused="true"] {
-  border: 1px solid #4E0082 !important;
+  border: 1px solid #4e0082 !important;
+  border-radius: 3.5px !important; 
+  background: linear-gradient(to right, #8266C4, #A267A9) !important;
+}
+#main-window[privatebrowsingmode="temporary"] .urlbarView-url,
+#main-window[privatebrowsingmode="temporary"] .urlbarView-title:not(:empty) ~ .urlbarView-action {
+    color: rgba(255,255,255,0.4) !important;
+}
+#main-window[privatebrowsingmode="temporary"] .urlbarView-row:not([type="tip"]):not([type="dynamic"])[selected] > .urlbarView-row-inner,
+#main-window[privatebrowsingmode="temporary"] .search-one-offs button[selected],
+#main-window[privatebrowsingmode="temporary"] .autocomplete-richlistitem[selected] {
+    background: rgba(0,0,0,0.2) !important;
+}
+#main-window[privatebrowsingmode="temporary"] #urlbar-input-container image,
+#main-window[privatebrowsingmode="temporary"] .urlbarView image,
+#main-window[privatebrowsingmode="temporary"] #customization-palette-container image,
+#main-window[privatebrowsingmode="temporary"] #nav-bar-customization-target > toolbarbutton:not(hbox) > image,
+#main-window[privatebrowsingmode="temporary"] #nav-bar-customization-target > toolbarpaletteitem image,
+#main-window[privatebrowsingmode="temporary"] #nav-bar-overflow-button image,
+#main-window[privatebrowsingmode="temporary"] #nav-bar-customization-target stack,
+#main-window[privatebrowsingmode="temporary"] #PopupSearchAutoComplete image,
+#main-window[privatebrowsingmode="temporary"] #searchbar image {
+    fill: #fff !important;
+}
+:root[privatebrowsingmode="temporary"]  {
+    --urlbar-separator-color: rgba(255,255,255,0.3) !important;
+}
+#main-window[privatebrowsingmode="temporary"] .urlbarView-body-inner,
+#main-window[privatebrowsingmode="temporary"] .search-one-offs,
+#main-window[privatebrowsingmode="temporary"] #customization-footer {
+    border-top: 1px solid rgba(255,255,255,0.2) !important;
+}
+#main-window[privatebrowsingmode="temporary"] #urlbar-input,
+#main-window[privatebrowsingmode="temporary"] .urlbarView-title,
+#main-window[privatebrowsingmode="temporary"] #urlbar-one-offs-header-label,
+#main-window[privatebrowsingmode="temporary"] .urlbarView-title-separator,
+#main-window[privatebrowsingmode="temporary"] #customization-palette-container label,
+#main-window[privatebrowsingmode="temporary"] #customization-palette-container,
+#main-window[privatebrowsingmode="temporary"] #customization-footer checkbox,
+#main-window[privatebrowsingmode="temporary"] .searchbar-textbox,
+#main-window[privatebrowsingmode="temporary"] #PopupSearchAutoComplete label,
+#main-window[privatebrowsingmode="temporary"] #PopupSearchAutoComplete button,
+#main-window[privatebrowsingmode="temporary"] #PopupSearchAutoComplete richlistitem {
+    color: #fff !important;
+}
+#main-window[privatebrowsingmode="temporary"] #PopupSearchAutoComplete {
+  background: #A267A9 !important;
+  border: 1px solid #4e0082 !important;
+  border-radius: 3.5px !important;
+}
+#main-window[privatebrowsingmode="temporary"] .autocomplete-richlistbox {
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+}
+#main-window[privatebrowsingmode="temporary"] #TabsToolbar tab .close-icon:hover:active {
+  background-color: rgba(255,255,255,0.1) !important;
 }
 #main-window[privatebrowsingmode="temporary"] #TabsToolbar {
   background: linear-gradient(to right, #5E4BC5, #a24c8d) !important;
@@ -1317,7 +1388,7 @@ toolbar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :hov
   border-bottom: 1px solid #4e0082 !important;
 }
 #main-window[privatebrowsingmode="temporary"] .tab-background[selected="true"] {
-  border-left: 1px solid #4e0082!important;
+  border-left: 1px solid #4e0082 !important;
   border-right: 1px solid #4e0082 !important;
   border-bottom: 1px solid #4e0082 !important;
   border-top: 0px !important;
@@ -1325,12 +1396,25 @@ toolbar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :hov
   background: rgba(255,255,255,0.15) !important;
 }
 #main-window[privatebrowsingmode="temporary"] #tabbrowser-tabs[movingtab] > #tabbrowser-arrowscrollbox > .tabbrowser-tab[selected="true"] {
-  background: rgba(141,32,174,1) !important;
+  background: #7F4BAA !important;
   border: none !important;
 }
 #main-window[privatebrowsingmode="temporary"] .tab-content > image:not(.tab-icon-image) {
   fill: rgba(255,255,255,1) !important;
 }
+#main-window[privatebrowsingmode="temporary"] .tab-content:not([selected]) > .tab-icon-image:-moz-lwtheme-brighttext {
+    filter: none !important;
+}
+#main-window[privatebrowsingmode="temporary"] .tab-icon-pending,
+#main-window[privatebrowsingmode="temporary"] .tab-throbber,
+#main-window[privatebrowsingmode="temporary"] .tab-loading-burst {
+    --tab-loading-fill: #fff !important;
+    color: #fff !important;
+}
+@media (prefers-color-scheme: dark) {
+#main-window[privatebrowsingmode="temporary"] .tab-content:not([selected]) > .tab-icon-image {
+    filter: none !important;
+}}
 #main-window[privatebrowsingmode="temporary"] #PersonalToolbar {
     background: linear-gradient(to right, #5E4BC5, #a24c8d) !important;
     border-top: 1px solid #4e0082 !important;
@@ -1357,6 +1441,18 @@ toolbar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :hov
 #main-window[privatebrowsingmode="temporary"] toolbar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :hover:active) > .toolbarbutton-badge-stack {
   background-color: rgba(255,255,255,0.3) !important;
 }
+#main-window[privatebrowsingmode="temporary"] #customization-container {
+    background: #2d0b44 !important;
+}
+#main-window[privatebrowsingmode="temporary"] .button-menu-dropmarker {
+    margin-left: 3px !important;
+    filter: invert(1) brightness(500%) !important;
+}
+@media (prefers-color-scheme: dark) {
+#main-window[privatebrowsingmode="temporary"] .button-menu-dropmarker {
+    margin-left: 3px !important;
+    filter: none !important;
+}}
 
 /* private browsing buttons */
 #main-window[privatebrowsingmode="temporary"] #back-button > .toolbarbutton-icon {
@@ -1391,7 +1487,32 @@ toolbar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :hov
 	list-style-image: url("data:image/svg+xml,%3Csvg height='16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cg color='%235b5b5b' transform='translate%28-713 -157%29'%3E%3Cpath d='M720.97 163.556L723.5 161l1.5 1.5-2.598 2.487L725 167.5l-1.5 1.5-2.512-2.599L718.5 169l-1.5-1.5 2.586-2.5-2.586-2.5 1.5-1.5z' fill='rgb(255, 255, 255)' overflow='visible' style='marker:none'/%3E%3C/g%3E%3C/svg%3E") !important;
 	filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.4)) !important;
 }
-
+#main-window[privatebrowsingmode="temporary"] #customization-lwtheme-button,
+#main-window[privatebrowsingmode="temporary"] #customization-toolbar-visibility-button,
+#main-window[privatebrowsingmode="temporary"] #customization-uidensity-button,
+#main-window[privatebrowsingmode="temporary"] #customization-reset-button,
+#main-window[privatebrowsingmode="temporary"] #customization-done-button {
+    appearance: none !important;
+    padding: 5px !important;
+    background-color: rgba(255,255,255,0.2) !important;
+    border: 1px solid rgba(0,0,0,0.50) !important;
+    border-radius: 3px !important;
+    box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.10) !important;
+	color: #fff !important;
+}
+#main-window[privatebrowsingmode="temporary"] #customization-lwtheme-button[open="true"],
+#main-window[privatebrowsingmode="temporary"] #customization-toolbar-visibility-button[open="true"],
+#main-window[privatebrowsingmode="temporary"] #customization-uidensity-button[open="true"],
+#main-window[privatebrowsingmode="temporary"] #customization-reset-button:active,
+#main-window[privatebrowsingmode="temporary"] #customization-done-button:active {
+    appearance: none !important;
+    padding: 5px !important;
+    background-color: rgba(255,255,255,0.2) !important;
+    border: 1px solid rgba(0,0,0,0.50) !important;
+    border-radius: 3px !important;
+    box-shadow: inset 0 0 3px 0 rgba(0,0,0,0.2) !important;
+	color: #fff !important;
+}
 @media (prefers-color-scheme: light) {
 #main-window[privatebrowsingmode="temporary"] .titlebar-close,
 #main-window[privatebrowsingmode="temporary"] .titlebar-min,
