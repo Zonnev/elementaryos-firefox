@@ -51,6 +51,7 @@ menubar > menu > menupopup > menu:hover,
 menubar > menu > menupopup > menu[open="true"],
 popupset > menupopup > menu > menupopup > menuitem:hover:not([disabled="true"]),
 popupset > menupopup > menu[open="true"],
+popupset > menupopup > menu:hover,
 popupset > menupopup > menuitem:hover:not([disabled="true"]),
 popupset > menupopup > menugroup > menuitem:hover:not([disabled="true"]) {
     appearance: none !important;
@@ -206,6 +207,7 @@ menubar > menu > menupopup > menu:hover:-moz-lwtheme-brighttext,
 menubar > menu > menupopup > menu[open="true"]:-moz-lwtheme-brighttext,
 popupset > menupopup > menu > menupopup > menuitem:hover:not([disabled="true"]):-moz-lwtheme-brighttext,
 popupset > menupopup > menu[open="true"]:-moz-lwtheme-brighttext,
+popupset > menupopup > menu:hover:-moz-lwtheme-brighttext,
 popupset > menupopup > menuitem:hover:not([disabled="true"]):-moz-lwtheme-brighttext,
 popupset > menupopup > menugroup > menuitem:hover:not([disabled="true"]):-moz-lwtheme-brighttext {
     appearance: none !important;
@@ -320,6 +322,7 @@ menubar > menu > menupopup > menu:hover,
 menubar > menu > menupopup > menu[open="true"],
 popupset > menupopup > menu > menupopup > menuitem:hover:not([disabled="true"]),
 popupset > menupopup > menu[open="true"],
+popupset > menupopup > menu:hover,
 popupset > menupopup > menuitem:hover:not([disabled="true"]),
 popupset > menupopup > menugroup > menuitem:hover:not([disabled="true"]) {
     appearance: none !important;
@@ -649,6 +652,10 @@ toolbar .toolbarbutton-1:hover > .toolbarbutton-badge-stack {
 .private-browsing-indicator {
     display: none !important;
 }
+.tab-icon-overlay {
+    margin-right: -25px !important;
+    margin-left: 8px !important;
+}
 
 #tabbrowser-tabs,
 #tabbrowser-tabs > .tabbrowser-arrowscrollbox,
@@ -763,7 +770,7 @@ toolbar .toolbarbutton-1:hover > .toolbarbutton-badge-stack {
 .tab-label {
     -moz-box-flex: 1 !important;
     margin-bottom: 0px !important;
-    margin-left: 4px !important;
+    margin-left: 6px !important;
     text-align: center !important;
 }
 .tab-line {
@@ -1043,7 +1050,6 @@ toolbar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :hov
     border: 1px solid rgba(0,0,0,0.50) !important;
     border-radius: 3px !important;
     box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.10) !important;
-}
 }}
 
 /* DARK MODE standalone */
@@ -1353,7 +1359,8 @@ toolbar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :hov
 #main-window[privatebrowsingmode="temporary"] .searchbar-textbox,
 #main-window[privatebrowsingmode="temporary"] #PopupSearchAutoComplete label,
 #main-window[privatebrowsingmode="temporary"] #PopupSearchAutoComplete button,
-#main-window[privatebrowsingmode="temporary"] #PopupSearchAutoComplete richlistitem {
+#main-window[privatebrowsingmode="temporary"] #PopupSearchAutoComplete richlistitem,
+#main-window[privatebrowsingmode="temporary"] #identity-icon-label {
     color: #fff !important;
 }
 #main-window[privatebrowsingmode="temporary"] #PopupSearchAutoComplete {
@@ -1443,6 +1450,18 @@ toolbar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :hov
     margin-left: 3px !important;
     filter: none !important;
 }}
+#main-window[privatebrowsingmode="temporary"] #alltabs-button:not(:-moz-lwtheme-brighttext) {
+    filter: invert(1) brightness(500%) !important;
+}
+#main-window[privatebrowsingmode="temporary"] #wrapper-alltabs-button:not(:-moz-lwtheme-brighttext) {
+    filter: none !important;
+}
+@media (prefers-color-scheme: dark) {
+#main-window[privatebrowsingmode="temporary"] #alltabs-button:not(:-moz-lwtheme-darktext),
+#main-window[privatebrowsingmode="temporary"] #wrapper-alltabs-button:not(:-moz-lwtheme-darktext) {
+    filter: none !important; 
+}}
+
 
 /* private browsing buttons */
 #main-window[privatebrowsingmode="temporary"] #back-button > .toolbarbutton-icon {
