@@ -57,10 +57,10 @@ menulist[open="true"] > .in-menulist > menuitem:hover:not([disabled="true"]) {
     background: #E9E9E9 !important;
 }
 menubar > menupopup menuitem:hover:not([disabled="true"]):not(.openintabs-menuitem),
-menubar > menupopup menu:hover,
+menubar > menupopup menu:hover:not([disabled="true"]),
 menubar > menupopup menu[open="true"],
 menubar > menu > menupopup menuitem:hover:not([disabled="true"]):not(.openintabs-menuitem),
-menubar > menu > menupopup menu:hover,
+menubar > menu > menupopup menu:hover:not([disabled="true"]),
 menubar > menu > menupopup menu[open="true"],
 popupset > menupopup > menu[open="true"],
 popupset > menupopup > menu:hover:not([disabled="true"]),
@@ -145,7 +145,7 @@ menupopup:not(#goPopup):not(#bookmarksMenuPopup):not(#BMB_bookmarksPopup) {
 
 /* menu popups DARK MODE */
 .menupopup-arrowscrollbox:not([part="arrowscrollbox"]):-moz-lwtheme-brighttext,
-.menupopup-arrowscrollbox[exportparts="scrollbox: arrowscrollbox-scrollbox"]:-moz-lwtheme-brighttext    {
+.menupopup-arrowscrollbox[exportparts="scrollbox: arrowscrollbox-scrollbox"]:-moz-lwtheme-brighttext {
     margin-bottom: 10px !important;
     margin-left: 5px !important;
     margin-right: 5px !important;
@@ -243,10 +243,10 @@ menulist[open="true"] > .in-menulist > menuitem:hover:not([disabled="true"]):-mo
     background: #5C5C61 !important;
 }
 menubar > menupopup menuitem:hover:not([disabled="true"]):not(.openintabs-menuitem):-moz-lwtheme-brighttext,
-menubar > menupopup menu:hover:-moz-lwtheme-brighttext,
+menubar > menupopup menu:hover:not([disabled="true"]):-moz-lwtheme-brighttext,
 menubar > menupopup menu[open="true"]:-moz-lwtheme-brighttext,
 menubar > menu > menupopup menuitem:hover:not([disabled="true"]):not(.openintabs-menuitem):-moz-lwtheme-brighttext,
-menubar > menu > menupopup menu:hover:-moz-lwtheme-brighttext,
+menubar > menu > menupopup menu:hover:not([disabled="true"]):-moz-lwtheme-brighttext,
 menubar > menu > menupopup menu[open="true"]:-moz-lwtheme-brighttext,
 popupset > menupopup > menu[open="true"]:-moz-lwtheme-brighttext,
 popupset > menupopup > menu:hover:not([disabled="true"]):-moz-lwtheme-brighttext,
@@ -388,10 +388,10 @@ menulist[open="true"] > .in-menulist > menuitem:hover:not([disabled="true"]) {
     background: #717171 !important;
 }
 menubar > menupopup menuitem:hover:not([disabled="true"]):not(.openintabs-menuitem),
-menubar > menupopup menu:hover,
+menubar > menupopup menu:hover:not([disabled="true"]),
 menubar > menupopup menu[open="true"],
 menubar > menu > menupopup menuitem:hover:not([disabled="true"]):not(.openintabs-menuitem),
-menubar > menu > menupopup menu:hover,
+menubar > menu > menupopup menu:hover:not([disabled="true"]),
 menubar > menu > menupopup menu[open="true"],
 popupset > menupopup > menu[open="true"],
 popupset > menupopup > menu:hover:not([disabled="true"]),
@@ -1042,7 +1042,7 @@ toolbar > toolbaritem > menubar > menu[open] {
 	background: linear-gradient(#3C3C3C, #404040) !important;
 	box-shadow: inset 0 1px 1px 0 rgba(0,0,0,0.1), 0 1px 0 0 rgb(255,255,255,0.05) !important;
 }
- #urlbar:not([focused="true"]) {
+#urlbar:not([focused="true"]) {
     border: 1px solid #272727 !important;
     border-radius: 2.5px !important; 
 	background: linear-gradient(#3C3C3C, #404040) !important;
@@ -1078,8 +1078,8 @@ toolbar > toolbaritem > menubar > menu[open] {
 #TabsToolbar tab .close-icon:hover:active {
     background-color: rgba(255,255,255,0.1) !important;
 }
-.tab-content:not([selected]) > .tab-icon-image {
-    filter: grayscale(1) brightness(50%) !important;
+.tab-content:not([selected]) image {
+    filter: brightness(70%) !important;
 }
 .tab-background[selected="true"] {
 	border-left: 1px solid #272727 !important;
@@ -1326,8 +1326,8 @@ toolbar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :hov
     border-top: 1px solid #272727 !important;
 	border-bottom: 1px solid rgb(36, 38, 39) !important;
 }
-.tab-content:not([selected]) > .tab-icon-image:-moz-lwtheme-brighttext {
-    filter: grayscale(1) brightness(50%) !important;
+.tab-content:not([selected]) image:-moz-lwtheme-brighttext {
+    filter: brightness(70%) !important;
 }
 .tab-background[selected="true"]:-moz-lwtheme-brighttext {
 	border-left: 1px solid #272727 !important;
@@ -1597,19 +1597,19 @@ toolbar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :hov
     background: #7F4BAA !important;
     border: none !important;
 }
-#main-window[privatebrowsingmode="temporary"] .tab-content:not([selected]) > .tab-icon-image:-moz-lwtheme-brighttext {
+#main-window[privatebrowsingmode="temporary"] .tab-content:not([selected]) image:-moz-lwtheme-brighttext {
     filter: none !important;
 }
+@media (prefers-color-scheme: dark) {
+#main-window[privatebrowsingmode="temporary"] .tab-content:not([selected]) image {
+    filter: none !important;
+}}
 #main-window[privatebrowsingmode="temporary"] .tab-icon-pending,
 #main-window[privatebrowsingmode="temporary"] .tab-throbber,
 #main-window[privatebrowsingmode="temporary"] .tab-loading-burst {
     --tab-loading-fill: #fff !important;
     color: #fff !important;
 }
-@media (prefers-color-scheme: dark) {
-#main-window[privatebrowsingmode="temporary"] .tab-content:not([selected]) > .tab-icon-image {
-    filter: none !important;
-}}
 #main-window[privatebrowsingmode="temporary"] #PersonalToolbar {
     background: linear-gradient(to right, #5E4BC5, #a24c8d) !important;
     border-top: 1px solid #4e0082 !important;
@@ -1620,15 +1620,12 @@ toolbar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :hov
 }
 #main-window[privatebrowsingmode="temporary"] .tab-text,
 #main-window[privatebrowsingmode="temporary"] .menubar-text,
-#main-window[privatebrowsingmode="temporary"] .bookmark-item:not(.subviewbutton) > .toolbarbutton-text {
+#main-window[privatebrowsingmode="temporary"] .bookmark-item:not(.subviewbutton) > .toolbarbutton-text,
+#main-window[privatebrowsingmode="temporary"] .tab-label:not([selected]) {
     font-family: Open Sans !important;
     font-size: 1.02em !important;
     color: rgba(255,255,255,1) !important;
     text-shadow: 0 1px 0 rgba(33,34,35,1) !important;
-}
-#main-window[privatebrowsingmode="temporary"] .tab-label:not([selected]) {
-    color: rgba(255,255,255,0.6) !important;
-    text-shadow: 0 1px 0 rgba(33,34,35,0.6) !important;
 }
 #main-window[privatebrowsingmode="temporary"] #PlacesToolbarItems .bookmark-item:not(menuitem):not(menu):-moz-any([open], [checked], :hover, :active) {
     background-color: rgba(255,255,255,0.3) !important;
