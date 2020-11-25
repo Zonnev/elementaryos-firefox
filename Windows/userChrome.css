@@ -278,6 +278,10 @@ menuitem:-moz-lwtheme-brighttext {
     box-shadow: none !important;
 }
 @media (prefers-color-scheme: light) {
+:root {
+    --default-arrowpanel-background: #404040 !important;
+    --panel-separator-color: #5C5C61 !important;
+}
 .menu-right:not([disabled="true"]):-moz-lwtheme-brighttext {
     filter: brightness(500%) !important;
 }}
