@@ -1438,7 +1438,8 @@ toolbar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :hov
 #nav-bar:-moz-lwtheme-brighttext {
     -moz-appearance: none !important;
     border-radius: 3.5px 3.5px 0 0 !important;
-	background: linear-gradient(to bottom, rgba(255,255,255,0.08) 1px, transparent 1px, transparent 45px, rgba(255,255,255,0.05) 46px),
+	background: linear-gradient(to right, #3C3C3C 0px, transparent 12px, transparent calc(100vw - 12px), #363636 100vw),
+	            linear-gradient(to bottom, rgba(255,255,255,0.08) 1px, transparent 1px, transparent 45px, rgba(255,255,255,0.05) 46px),
 	            linear-gradient(to bottom, #3C3C3C, #363636) !important;
 }
 :root[sizemode="fullscreen"] #nav-bar:-moz-lwtheme-brighttext {
@@ -1648,7 +1649,8 @@ toolbar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :hov
 #main-window[privatebrowsingmode="temporary"] #nav-bar {
     -moz-appearance: none !important;
     border-radius: 3.5px 3.5px 0 0 !important;
-    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 1px, transparent 1px, transparent 45px, rgba(255,255,255,0.1) 46px),
+    background: linear-gradient(to right, #5E4BC5 0px, transparent 12px, transparent calc(100vw - 12px), #a24c8d 100vw),
+                linear-gradient(to bottom, rgba(255,255,255,0.15) 1px, transparent 1px, transparent 45px, rgba(255,255,255,0.1) 46px),
                 linear-gradient(to right, #5E4BC5, #a24c8d) !important;
 }
 #main-window[privatebrowsingmode="temporary"]:root[sizemode="fullscreen"] #nav-bar {
