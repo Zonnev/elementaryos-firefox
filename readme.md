@@ -1,5 +1,5 @@
 # An elementary OS 5 (Hera) theme for Firefox
-![Screenshot](elementary5-firefox-theme-new-privatemode.png)
+![Screenshot](elementary5-firefox-theme.png)
 
 ## Credits
 
