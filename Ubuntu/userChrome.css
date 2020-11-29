@@ -981,23 +981,34 @@ toolbar .toolbarbutton-1:hover > .toolbarbutton-badge-stack {
 #new-tab-button .toolbarbutton-icon {
     list-style-image: url("data:image/svg+xml,%3Csvg height='16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cg color='%235b5b5b' transform='translate%28-293 -117%29'%3E%3Cpath d='M300 120v4h-4v2h4v4h2v-4h4v-2h-4v-4z' fill='%235b5b5b' overflow='visible' style='marker:none'/%3E%3C/g%3E%3C/svg%3E") !important;
     filter: drop-shadow(0 1px 0 rgba(255,255,255, 0.4)) !important;
-    width: 28px !important;
+    width: 32px !important;
     height: 28px !important;
-    padding: 6px !important;
-    border-radius: 3px !important;
-    margin-left: 1px !important;
-    margin-right: 1px !important;
+    border-radius: 0px !important;
+    margin-left: -1px !important;
+    margin-right: -1px !important;
+    margin-top: 1px !important;
+    margin-bottom: 1px !important;
+    padding-top: 5.5px !important;
+    padding-bottom: 5.5px !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    clip-path: none !important;
 }
 #tabs-newtab-button .toolbarbutton-icon {
     list-style-image: url("data:image/svg+xml,%3Csvg height='16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cg color='%235b5b5b' transform='translate%28-293 -117%29'%3E%3Cpath d='M300 120v4h-4v2h4v4h2v-4h4v-2h-4v-4z' fill='%235b5b5b' overflow='visible' style='marker:none'/%3E%3C/g%3E%3C/svg%3E") !important;
     filter: drop-shadow(0 1px 0 rgba(255,255,255, 0.4)) !important;
-    width: 28px !important;
+    width: 32px !important;
     height: 28px !important;
-    padding: 6px !important;
-    border-radius: 3px !important;
-    margin: 0px !important;
-    margin-left: 1px !important;
-    margin-right: 1px !important;
+    border-radius: 0px !important;
+    margin-left: -1px !important;
+    margin-right: -1px !important;
+    margin-top: 1px !important;
+    margin-bottom: 1px !important;
+    padding-top: 5.5px !important;
+    padding-bottom: 5.5px !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    clip-path: none !important;
 }
 
 /*Hide and show close tab button*/
@@ -1770,10 +1781,7 @@ toolbar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :hov
     --tab-loading-fill: #fff !important;
     color: #fff !important;
 }
-#main-window[privatebrowsingmode="temporary"] #PersonalToolbar {
-    background: linear-gradient(to right, #5E4BC5, #a24c8d) !important;
-    border-top: 1px solid #4e0082 !important;
-}
+#main-window[privatebrowsingmode="temporary"] #PersonalToolbar,
 #main-window[privatebrowsingmode="temporary"] #toolbar-menubar {
     background: linear-gradient(to right, #5E4BC5, #a24c8d) !important;
     border-top: 1px solid #4e0082 !important;
@@ -1787,14 +1795,14 @@ toolbar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :hov
     color: rgba(255,255,255,1) !important;
     text-shadow: 0 1px 0 rgba(33,34,35,1) !important;
 }
-#main-window[privatebrowsingmode="temporary"] #PlacesToolbarItems .bookmark-item:not(menuitem):not(menu):-moz-any([open], [checked], :hover, :active) {
+#main-window[privatebrowsingmode="temporary"] #PlacesToolbarItems .bookmark-item:not(menuitem):not(menu):-moz-any([open], [checked], :hover, :active),
+#main-window[privatebrowsingmode="temporary"] toolbar .toolbarbutton-1:not([disabled="true"]):not(#new-tab-button):not(#tabs-newtab-button):-moz-any([open], [checked], :hover:active) > .toolbarbutton-icon,
+#main-window[privatebrowsingmode="temporary"] toolbar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :hover:active) > .toolbarbutton-badge-stack  {
     background-color: rgba(255,255,255,0.3) !important;
 }
-#main-window[privatebrowsingmode="temporary"] toolbar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :hover:active) > .toolbarbutton-icon {
-    background-color: rgba(255,255,255,0.3) !important;
-}
-#main-window[privatebrowsingmode="temporary"] toolbar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :hover:active) > .toolbarbutton-badge-stack {
-    background-color: rgba(255,255,255,0.3) !important;
+#main-window[privatebrowsingmode="temporary"] #new-tab-button:-moz-any([open], [checked], :hover:active) .toolbarbutton-icon,
+#main-window[privatebrowsingmode="temporary"] #tabs-newtab-button:-moz-any([open], [checked], :hover:active) .toolbarbutton-icon {
+    background-color: rgba(255,255,255,0.1) !important;
 }
 #main-window[privatebrowsingmode="temporary"] #customization-container {
     background: #2d0b44 !important;
