@@ -791,7 +791,7 @@ toolbaritem > hbox > hbox > toolbarbutton > menupopup > menu menu[open="true"] {
 	background: linear-gradient(to bottom, rgba(255,255,255,0.6) 1px, transparent 1px, transparent 45px, rgba(255,255,255,0.2) 46px),
 	            linear-gradient(to bottom, #E5E5E5, #D3D3D3) !important;
     height: 46px !important;
-    padding: 0px 69px 0px 42px !important;
+    padding: 0px 102px 0px 3px !important;
 }
 /* fullscreen fixes for the nav bar */
 :root[sizemode="fullscreen"] #nav-bar {
