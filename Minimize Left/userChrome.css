@@ -679,6 +679,12 @@ toolbaritem > hbox > hbox > toolbarbutton > menupopup > menu menu[open="true"] {
 }
 
 /* focus window fix */
+#nav-bar:-moz-window-inactive {
+    -moz-appearance: none !important;
+    border-radius: 3.5px 3.5px 0 0 !important;
+	background: linear-gradient(to bottom, rgba(255,255,255,0.6) 1px, transparent 1px, transparent 45px, rgba(255,255,255,0.2) 46px),
+	            linear-gradient(to bottom, #EFEFEF, #E2E2E2) !important;
+}
 #TabsToolbar:-moz-window-inactive {
     background: #e2e2e2 !important;
     border-top: 1px solid #b6b6b6 !important;
@@ -788,9 +794,12 @@ toolbaritem > hbox > hbox > toolbarbutton > menupopup > menu menu[open="true"] {
 }
 #nav-bar {
     -moz-box-ordinal-group: 0;
-    -moz-appearance: -moz-window-titlebar !important; /* makes color appear */
+    -moz-appearance: none !important;
+    border-radius: 3.5px 3.5px 0 0 !important;
+	background: linear-gradient(to bottom, rgba(255,255,255,0.6) 1px, transparent 1px, transparent 45px, rgba(255,255,255,0.2) 46px),
+	            linear-gradient(to bottom, #E5E5E5, #D3D3D3) !important;
     height: 46px !important;
-    padding: 0px 42px 0px 75px !important;
+    padding: 0px 69px 0px 42px !important;
 }
 /* fullscreen fixes for the nav bar */
 :root[sizemode="fullscreen"] #nav-bar {
