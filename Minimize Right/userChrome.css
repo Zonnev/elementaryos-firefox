@@ -1807,7 +1807,9 @@ toolbar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :hov
 #main-window[privatebrowsingmode="temporary"] .toolbarbutton-icon[type="menu"],
 #main-window[privatebrowsingmode="temporary"] #bookmarks-toolbar-placeholder image,
 #main-window[privatebrowsingmode="temporary"] #PlacesChevron .toolbarbutton-icon,
-#main-window[privatebrowsingmode="temporary"] #import-button image {
+#main-window[privatebrowsingmode="temporary"] #import-button image,
+#main-window[privatebrowsingmode="temporary"] #TabsToolbar-customization-target > toolbarbutton:not(hbox) > image,
+#main-window[privatebrowsingmode="temporary"] #TabsToolbar-customization-target > toolbarpaletteitem image {
     fill: #fff !important;
 }
 :root[privatebrowsingmode="temporary"]    {
