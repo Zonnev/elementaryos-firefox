@@ -1090,7 +1090,6 @@ toolbar .toolbarbutton-1:hover > .toolbarbutton-badge-stack {
 .tab-text,
 .menubar-text,
 .bookmark-item:not(.subviewbutton) > .toolbarbutton-text {
-    font-family: Open Sans !important;
     font-size: 1.02em !important;
     color: #5B5B5B !important;
     text-shadow: 0 1px 0 rgba(255,255,255, 0.4) !important;
@@ -1348,7 +1347,6 @@ toolbar > toolbaritem > menubar > menu[open] {
 .tab-text,
 .menubar-text,
 .bookmark-item:not(.subviewbutton) > .toolbarbutton-text {
-    font-family: Open Sans !important;
     font-size: 1.02em !important;
     color: #BEBEBF !important;
     text-shadow: 0 1px 0 rgba(33,34,35,1) !important;
@@ -1602,7 +1600,6 @@ toolbar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :hov
 .tab-text:-moz-lwtheme-brighttext,
 .menubar-text:-moz-lwtheme-brighttext,
 .bookmark-item:not(.subviewbutton) > .toolbarbutton-text:-moz-lwtheme-brighttext {
-    font-family: Open Sans !important;
     font-size: 1.02em !important;
     color: #BEBEBF !important;
     text-shadow: 0 1px 0 rgba(33,34,35,1) !important;
@@ -1903,7 +1900,6 @@ toolbar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :hov
 #main-window[privatebrowsingmode="temporary"] .menubar-text,
 #main-window[privatebrowsingmode="temporary"] .bookmark-item:not(.subviewbutton) > .toolbarbutton-text,
 #main-window[privatebrowsingmode="temporary"] .tab-label:not([selected]) {
-    font-family: Open Sans !important;
     font-size: 1.02em !important;
     color: rgba(255,255,255,1) !important;
     text-shadow: 0 1px 0 rgba(33,34,35,1) !important;
