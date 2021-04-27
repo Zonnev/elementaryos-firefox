@@ -1006,9 +1006,14 @@ toolbar .toolbarbutton-1:hover > .toolbarbutton-badge-stack {
     border-top-left-radius: 4px !important;
     border-top-right-radius: 4px !important;
 }
+.tabbrowser-tab {
+    padding-inline: 0px !important;
+}
 .tab-background {
     background: unset !important;
     border: none !important;
+    border-radius: 0px !important;
+    margin-block: 0px !important;
 }
 .tab-background[selected="true"] {
     background-attachment: none !important;
@@ -1018,6 +1023,12 @@ toolbar .toolbarbutton-1:hover > .toolbarbutton-badge-stack {
     border-bottom: 1px solid #898989 !important;
     border-top-left-radius: 4px !important;
     border-top-right-radius: 4px !important;
+}
+#TabsToolbar:not([brighttext]) #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected="true"], [multiselected]) > .tab-stack > .tab-background {
+    box-shadow: none !important;
+}
+#tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[first-visible-unpinned-tab] {
+    margin-inline-start: 0px !important;
 }
 #new-tab-button .toolbarbutton-icon {
     list-style-image: url("data:image/svg+xml,%3Csvg height='16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cg color='%235b5b5b' transform='translate%28-293 -117%29'%3E%3Cpath d='M300 120v4h-4v2h4v4h2v-4h4v-2h-4v-4z' fill='%235b5b5b' overflow='visible' style='marker:none'/%3E%3C/g%3E%3C/svg%3E") !important;
@@ -1054,9 +1065,13 @@ toolbar .toolbarbutton-1:hover > .toolbarbutton-badge-stack {
 
 /*Hide and show close tab button*/
 #TabsToolbar .tab-close-button {
+    margin-top: 1px !important;
     margin-right: 3px !important;
     margin-left: 0px !important;
     border-radius: 2px !important;
+    width: 16px !important;
+    height: 16px !important;
+    padding: 0px !important;
     list-style-image: url("data:image/svg+xml,%3Csvg height='16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cg color='%235b5b5b' transform='translate%28-713 -157%29'%3E%3Cpath d='M720.97 163.556L723.5 161l1.5 1.5-2.598 2.487L725 167.5l-1.5 1.5-2.512-2.599L718.5 169l-1.5-1.5 2.586-2.5-2.586-2.5 1.5-1.5z' fill='%235b5b5b' overflow='visible' style='marker:none'/%3E%3C/g%3E%3C/svg%3E") !important;
     filter: drop-shadow(0 1px 0 rgba(255,255,255, 0.4)) !important;
 }
@@ -1828,7 +1843,7 @@ toolbar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :hov
 #main-window[privatebrowsingmode="temporary"] #import-button label,
 #main-window[privatebrowsingmode="temporary"] #nav-bar-customization-target > #zoom-controls > toolbarbutton > label,
 #main-window[privatebrowsingmode="temporary"] #TabsToolbar-customization-target > #zoom-controls > toolbarbutton > label,
-#main-window[privatebrowsingmode="temporary"] #TabsToolbar-customization-target > #wrapper-zoom-controls > #zoom-controls > toolbarbutton > label,
+#main-window[privatebrowsingmode="temporary"] #TabsToolbar-customization-target > #wrapper-zoom-controls > #zoom-controls > toolbarbutton > label, 
 #main-window[privatebrowsingmode="temporary"] #nav-bar-customization-target > #wrapper-zoom-controls > #zoom-controls > toolbarbutton > label,
 #main-window[privatebrowsingmode="temporary"] #urlbar-zoom-button label {
     color: #fff !important;
