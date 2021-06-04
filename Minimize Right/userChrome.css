@@ -826,12 +826,6 @@ toolbaritem > hbox > hbox > toolbarbutton > menupopup > menu menu[open="true"] {
     padding-top: 2px !important;
     height: 39px !important;
 }
-.urlbar-icon {
-    width: 22px !important;
-    height: 22px !important;
-    padding: 4.5px !important;
-    margin-right: 5px !important;
-}
 #urlbar[breakout][breakout-extend][breakout-extend-animate] > #urlbar-input-container > #page-action-buttons > #reader-mode-button {
     width: 22px !important;
     height: 22px !important;
@@ -856,8 +850,14 @@ toolbaritem > hbox > hbox > toolbarbutton > menupopup > menu menu[open="true"] {
     border: none !important;
     background: none !important;
 }
+.urlbar-icon {
+    width: 22px !important;
+    height: 22px !important;
+    padding: 2.5px !important;
+}
 #urlbar-zoom-button {
-    margin-block: calc((var(--urlbar-min-height) - var(--urlbar-container-padding) - 6px - 18px) / 2) !important;
+    padding: 0px 3px !important;
+    margin:  0px 2px !important;
 }
 
 /* toolbar */
@@ -1040,6 +1040,13 @@ toolbar .toolbarbutton-1:hover > .toolbarbutton-badge-stack {
     border-bottom: 1px solid #898989 !important;
     border-top-left-radius: 4px !important;
     border-top-right-radius: 4px !important;
+}
+.tab-secondary-label{
+    margin-top: -2px !important;
+    margin-left: 5px !important;
+}
+.tabbrowser-tab {
+    -moz-box-direction: reverse !important;
 }
 #TabsToolbar:not([brighttext]) #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected="true"], [multiselected]) > .tab-stack > .tab-background {
     box-shadow: none !important;
