@@ -849,7 +849,7 @@ toolbaritem > hbox > hbox > toolbarbutton > menupopup > menu menu[open="true"] {
 #urlbar-zoom-button {
     padding: 0px 3px !important;
     margin:  0px 2px !important;
-
+}
 
 /* toolbar */
 :root:not([customizing]) .toolbarbutton-1[disabled="true"] {
