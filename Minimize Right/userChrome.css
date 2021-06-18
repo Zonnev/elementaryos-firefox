@@ -1051,6 +1051,9 @@ toolbar .toolbarbutton-1:hover > .toolbarbutton-badge-stack {
 .tabbrowser-tab {
     -moz-box-direction: reverse !important;
 }
+.tab-icon-overlay:not([crashed]):is([pinned], [sharing]) {
+    inset-inline-end: -10px !important;
+}
 #TabsToolbar:not([brighttext]) #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected="true"], [multiselected]) > .tab-stack > .tab-background {
     box-shadow: none !important;
 }
@@ -1967,6 +1970,12 @@ toolbar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :hov
 }
 #main-window[privatebrowsingmode="temporary"] #wrapper-alltabs-button:not(:-moz-lwtheme-brighttext) {
     filter: none !important;
+}
+#main-window[privatebrowsingmode="temporary"] .tab-icon-overlay:is([soundplaying], [muted], [activemedia-blocked], [pictureinpicture], [crashed]):not(:is([pinned])) {
+    fill: #fff !important;
+}
+#main-window[privatebrowsingmode="temporary"] .tab-secondary-label {
+    color: rgba(255,255,255,1) !important;
 }
 @media (prefers-color-scheme: dark) {
 #main-window[privatebrowsingmode="temporary"] #alltabs-button:not(:-moz-lwtheme-darktext),
