@@ -1206,7 +1206,8 @@ toolbar > toolbaritem > menubar > menu[open] {
 }
 #PersonalToolbar {
     -moz-box-ordinal-group: 0;
-    padding: 3px !important;
+    padding: 4px 6px !important;
+    height: 38px !important;
     background: #d1d1d1 !important;
     border-top: 1px solid #979797 !important;
 }
