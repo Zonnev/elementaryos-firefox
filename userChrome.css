@@ -1217,6 +1217,9 @@ toolbar > toolbaritem > menubar > menu[open] {
 #PlacesToolbarItems .bookmark-item:not(menuitem):not(menu) {
     padding: 4px 6px !important;
 }
+#PersonalToolbar .toolbarbutton-1 {
+    padding: 0px 4px !important;
+}
 
 /* misc */
 #tracking-protection-icon-box:not([hasException])[active] > #tracking-protection-icon-animatable-box > #tracking-protection-icon-animatable-image {
