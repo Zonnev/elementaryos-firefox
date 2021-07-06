@@ -879,7 +879,7 @@ toolbaritem > hbox > hbox > toolbarbutton > menupopup > menu menu[open="true"] {
 :root:not([customizing]) .toolbarbutton-1[disabled="true"] {
     opacity: 0.6 !important;
 }
-toolbar .toolbarbutton-1 > .toolbarbutton-icon {
+toolbar:not(.browser-toolbar.chromeclass-directories.instant.customization-target) .toolbarbutton-1 > .toolbarbutton-icon {
     width: 28px !important;
     height: 28px !important;
     padding: 6px !important;
@@ -1215,8 +1215,9 @@ toolbar > toolbaritem > menubar > menu[open] {
 }
 #PersonalToolbar {
     -moz-box-ordinal-group: 0;
-    padding: 2px 6px !important;
-    height: 30px !important;
+    padding: 0px !important;
+    max-height: 30px !important;
+    min-height: 30px !important;
     background: #d1d1d1 !important;
     border-top: 1px solid #979797 !important;
 }
@@ -1234,15 +1235,19 @@ toolbar > toolbaritem > menubar > menu[open] {
     padding: 0px 2px !important;
 }
 #PersonalToolbar #import-button > .toolbarbutton-icon {
-    margin-inline-end: 0px !important;
-    padding: 2px !important;
+    margin-inline-end: 4px !important;
+    padding: 0px !important;
 }
 .toolbarbutton-text {
     margin: 0px 0px 1px 0px !important;
 }
 #personal-toolbar-empty-description {
     margin: 0px !important;
-    padding: 4px 6px !important;
+    padding: 6px 6px !important;
+}
+#wrapper-personal-bookmarks,
+#wrapper-import-button {
+    min-height: 28px !important;
 }
 
 /* misc */
