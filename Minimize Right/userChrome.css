@@ -1249,6 +1249,9 @@ toolbar > toolbaritem > menubar > menu[open] {
 #wrapper-import-button {
     min-height: 28px !important;
 }
+#bookmarks-toolbar-placeholder {
+    margin: 0px !important;
+}
 
 /* misc */
 #tracking-protection-icon-box:not([hasException])[active] > #tracking-protection-icon-animatable-box > #tracking-protection-icon-animatable-image {
