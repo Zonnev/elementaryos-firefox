@@ -1233,7 +1233,10 @@ toolbar > toolbaritem > menubar > menu[open] {
 }
 #PersonalToolbar #import-button > .toolbarbutton-icon {
     margin-inline-end: 0px !important;
-    padding: 4px !important;
+    padding: 2px !important;
+}
+.toolbarbutton-text {
+    margin: 0px 0px 1px 0px !important;
 }
 #personal-toolbar-empty-description {
     margin: 0px !important;
