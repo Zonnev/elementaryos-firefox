@@ -885,7 +885,7 @@ toolbar:not(.browser-toolbar.chromeclass-directories.instant.customization-targe
     padding: 6px !important;
     margin-right: 6px !important;
 }
-toolbar .toolbarbutton-1:hover > .toolbarbutton-icon {
+toolbar .toolbarbutton-1:not(.chromeclass-toolbar-additional.overflow-button):hover > .toolbarbutton-icon {
     background: none !important;
     box-shadow: none !important;
 }
