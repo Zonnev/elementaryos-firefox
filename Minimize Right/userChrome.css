@@ -1458,6 +1458,9 @@ toolbar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :hov
 toolbar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :hover:active) > .toolbarbutton-badge-stack {
     background-color: rgba(255,255,255,0.1) !important;
 }
+toolbar[customizing] > .overflow-button:hover > .toolbarbutton-icon {
+    background: rgba(255,255,255, 0.3) !important;
+}
 
 /* buttons in DARK MODE */
 #back-button > .toolbarbutton-icon {
@@ -1710,6 +1713,9 @@ toolbar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :hov
 }
 toolbar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :hover:active) > .toolbarbutton-badge-stack:-moz-lwtheme-brighttext {
     background-color: rgba(255,255,255,0.1) !important;
+}
+toolbar[customizing] > .overflow-button:hover > .toolbarbutton-icon:-moz-lwtheme-brighttext {
+    background: rgba(255,255,255, 0.18) !important;
 }
 
 /* buttons in DARK MODE standalone */
