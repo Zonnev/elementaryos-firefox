@@ -885,9 +885,12 @@ toolbar:not(.browser-toolbar.chromeclass-directories.instant.customization-targe
     padding: 6px !important;
     margin-right: 6px !important;
 }
-toolbar .toolbarbutton-1:not(.chromeclass-toolbar-additional.overflow-button):hover > .toolbarbutton-icon {
+toolbar .toolbarbutton-1:hover > .toolbarbutton-icon {
     background: none !important;
     box-shadow: none !important;
+}
+toolbar[customizing] > .overflow-button:hover > .toolbarbutton-icon {
+    background: rgba(51,51,51, 0.3) !important;
 }
 toolbar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :hover:active) > .toolbarbutton-icon {
     background: rgba(51,51,51, 0.15) !important;
