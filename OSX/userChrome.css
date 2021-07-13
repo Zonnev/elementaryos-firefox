@@ -1007,10 +1007,6 @@ toolbarpaletteitem > #stop-reload-button {
 .private-browsing-indicator {
     display: none !important;
 }
-.tab-icon-overlay {
-    margin-right: -25px !important;
-    margin-left: 0px !important;
-}
 .tab-icon-overlay[pinned] {
     margin-inline: -4px !important;
 }
