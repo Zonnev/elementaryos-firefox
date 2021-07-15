@@ -1167,6 +1167,9 @@ toolbarpaletteitem > #stop-reload-button {
 .tab-line {
     display: none !important; /* strip of color at the top of tab */
 }
+.tab-icon-image:not([pinned]) {
+    margin-inline-end: 0px !important;
+}
 
 /* drag space */
 .titlebar-spacer[type="pre-tabs"] {
