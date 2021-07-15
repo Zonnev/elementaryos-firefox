@@ -1165,8 +1165,12 @@ toolbarpaletteitem > #stop-reload-button {
 .tab-line {
     display: none !important; /* strip of color at the top of tab */
 }
-.tab-icon-image:not([pinned]) {
+.tab-icon-image:not([pinned]),
+.tab-icon-overlay:not([pinned]) {
     margin-inline-end: 0px !important;
+}
+.tab-label-container {
+    mask-image: linear-gradient(to left, transparent, black var(--tab-label-mask-size)) !important;
 }
 
 /* drag space */
